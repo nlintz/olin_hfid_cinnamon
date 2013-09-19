@@ -1,0 +1,23 @@
+<div class="container fade-in">
+	<div class="page-header">
+		<h1>Le Team</h1>
+	</div>
+	<div class="row" ng-repeat="member in teamMembers">
+		<div class="col-md-4 col-xs-12">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 ng-bind="member.name"></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p ng-bind="member.description"></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="col-md-4 col-xs-12">
+			<!-- <img src="{{'/public/images/'}}{{member.imgURL}}" alt="..." class="img-thumbnail"> -->
+		</div>
+	</div>
+</div>
