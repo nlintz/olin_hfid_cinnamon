@@ -25,6 +25,12 @@ angular.module('teamCinnamon.controllers', []).
 	}]).
 	controller('inspirationalDesignsController', ['$scope', 'InspirationalDesignData', function($scope, InspirationalDesignData){
 		InspirationalDesignData.then(function(data){
-			console.log(data)
+			$scope.inspirationalDesigns = data.data;
+			$scope.scrollTo = function(id){
+				var location = "#"+id;
+				$.scrollTo($(location), 500);
+			}
+			$('#inspirational-designs-side-nav').affix();
+			$(".fancybox").fancybox();
 		})
 	}])

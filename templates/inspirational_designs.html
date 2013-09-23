@@ -2,4 +2,54 @@
 	<div class="page-header">
 		<h1>Inspirational Designs</h1>
 	</div>
+	<div class="row">
+		<div class="col-md-3 hidden-sm hidden-xs">
+			<div class="bs-sidebar" id="inspirational-designs-side-nav">
+				<ul class="nav bs-sidenav">
+					<li ng-repeat="design in inspirationalDesigns">
+						<a href="" ng-click="scrollTo('scrollspyNav' + $index)">{{design.product_name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-9 col-sm-12 col-xs-12">
+			<div ng-repeat="design in inspirationalDesigns" class="inspirational-design-container" id="{{'scrollspyNav' + $index}}"> 
+				<h2>{{design.product_name}}</h2>
+				<h4 ng-show="design.type == 'long'">Analysis by: {{design.created_by}}</h4>
+				<div class="row">
+					<!-- Product Description Conditionals -->
+					<div ng-show="design.type == 'long'" class="col-md-7 col-sm-12 col-xs-12">
+						<p ng-bind-html-unsafe="design.product_description"></p>
+					</div>
+
+					<div ng-show="design.type == 'short'" class="col-md-12 col-sm-12 col-xs-12">
+						<p ng-bind-html-unsafe="design.product_description"></p>
+					</div>
+
+					<!-- Product Image Conditionals -->
+					<div ng-show="design.type == 'long'" class="col-md-5 col-sm-12 col-xs-12">
+						<div class="row text-center" ng-repeat="image in design.images">
+							<div class="col-md-12 col-sm-12 col-xs-12 inspirational-design-image-container">
+								<a class="fancybox" rel="group" href="{{'public/images/inspirationalDesigns/'}}{{image.url}}">
+									<img ng-src="{{'public/images/inspirationalDesigns/'}}{{image.url}}" alt="..." class="img-thumbnail inspiration-design-image">
+									<figcaption>{{image.caption}}</figcaption>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div ng-show="design.type == 'short'" class="col-md-12 col-sm-12 col-xs-12">
+						<div class="row text-center" ng-repeat="image in design.images">
+							<div class="col-md-12 col-sm-12 col-xs-12 inspirational-design-image-container">
+								<img ng-src="{{'public/images/inspirationalDesigns/'}}{{image.url}}" alt="..." class="img-thumbnail inspiration-design-image">
+								<figcaption>{{image.caption}}</figcaption>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

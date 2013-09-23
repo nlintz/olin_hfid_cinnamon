@@ -1,3 +1,88 @@
-{
-	"name": "nathan"
-}
+[	
+	{"type":"long",
+	"product_name": "Allrecipes.com",
+	"product_description": "The Allrecipes.com Menu Planner lets the user plan out a week of menus by dragging and dropping dishes from a sidebar.  The user is able to completely customize the recipe list as well as search for additional recipes using a convenient search feature (searching by a variety of terms).  Once the user adds the recipe to the menu for the week, the ingredients for that menu are added to the grocery list, which is displayed on the right.  The user can also sign in to save favorite recipes and menus for future use. <br><br> This menu planner has a lot of the same feature that students at Olin are interested in having in a course planner.  The user could sign in and provide just a bit of information (major and graduation year) and then the system would generate a list of required courses.  The student would drag and drop these courses into a weekly planner and arrange them to fit the schedule that they desire (within the constraints of the course offerings, which would be provided underneath the course name). <br><br> From our user interviews, it sounded as if the search feature was important to have in a course planner.  In the current system, it is very difficult to tell what courses are offered when.  The student should be able to search by subject area (ENGR, MTH, AHS, etc), by discipline (ME, ECE, Bio, etc), by term, or by professor. <br><br> The automatically generated shopping list could show what prerequisites were necessary to take the schedule that the student was interested in taking, but from our user interviews it sounded like this information wasn’t as necessary to Oliners.  Oliners seemed more interested in keeping a sort of “Wish List” of courses that sounded interesting.  In our course planner, the student could drag courses from a list produced by the search feature to save electives for later. <br><br> The actual schedule (replacing the Menus in the center of the Allrecipes.com page) would need to have multiple options for visualization to handle the different information that users want to see.  Minimally, the design should include a semester-by-semester view (similar to Outlook’s weekly calendar view) to work the schedule once the timeframes classes were offered came out.  The planner should also include a four-year view so that the student could see the big-picture view of his or her time at Olin.  This view would look more like the monthly view in Outlook, and show the number of credits the student was taking in each semester. <br><br> One option which would be interesting to explore more would be having the course planner automatically populate the student’s four years with a proposed schedule (which resembles how Allrecipes.com suggests recipes that the user might like).  This would help novice users such as freshmen by providing a basis for them to start from.",
+	"images": [{ "url": "allRecipes1.jpeg", "caption": ""}, { "url": "allRecipes2.jpeg", "caption": "Search feature"}, { "url": "allRecipes3.jpeg", "caption": "Weekly Menu"}, { "url": "allRecipes4.jpeg", "caption": "Automatically Generated Shopping List"}],
+	"created_by": "Sharon Grimshaw"
+	},
+	{"type":"long",
+	"product_name": "TeuxDeux",
+	"product_description": "TeuxDeux.com provides a web-based application for planning and achieving day-to-day activities. One of the most inspiring aspects of the interface is how it provides all the functionality needed for a day-to-day planning while being easy to use and understand. TeuxDeux quietly works despite having a number of features and potential for complexity. We can learn from TeuxDeux how to make a simple, effective planning interface. Consider that to graduate you have to have a certain # of credits and courses taken by the end of 8 semesters. A course planner structured like TeuxDeux would have semesters instead of days, and two rows of 4 semesters. Courses could be entered (some possibly entered automatically) and then shifted around during planning. When a semester completes, the semester gets greyed out and any courses aimed to be taken by that semester move to the next semester as a goal to achieve.",
+	"images": [{ "url": "teuxDeux1.jpeg", "caption": ""}],
+	"created_by": "Chaz Gwenapp"
+	},
+	{"type":"long",
+	"product_name": "Cookie Clicker",
+	"product_description": "Cookie clicker is a javascript-based online browser game that has spawned numerous addicts due to its quick action-and-reward system. The player owns a company that produces cookies, and his or her objective is to make as many cookies as possible through the combination of cookie farms, factories, mines, and laboratories. The game is designed to make players feel satisfied from seeing the number of cookies rapidly increasing and their companies being filled with more employees and a greater inventory. <br><br> The game’s mechanics are akin to course planning: just as the game allows better and better upgrades as players produce and sell more and more cookies, students take higher and higher level courses as they complete their required classes. In addition, just as the correct ratio of farms, factories, and mines provide the maximum profit from a given investment, the students also try to balance courseload and major requirements in order to have a maximized learning experience. <br><br> Since the game depends heavily on visual reward, all of the employees, farms, factories and mines owned by the company are shown in the middle screen. Players enjoy seeing their wealth doubling by the minute and can strategically plan the next investment based on the provided visual information. A similar approach to course planning can be done for students: each row can visually lay out the courses that a student is planning to take in a particular semester. Students would then have a visual overview of their long-term plan and also feel satisfied from a beautifully crafted schedule. In fact, during interviews, some of our users whom we characterized as “high-planners” have proudly shown their four-year plan to us, with confidence and happiness on their faces. A visual representation of the four-year plan will help make the whole experience of course planning more rewarding. <br><br> The game also suggests what upgrades the player should buy given the combination of inventory the player’s company owns. In our course planning website, we could suggest upper-level courses that students may want to take as well as non-major related courses that students can take if they have free time based on previous classes that the student has chosen. ",
+	"images": [{ "url": "cookieClicker1.png", "caption": ""}, { "url": "cookieClicker2.png", "caption": "Overview Of The Player’s Company"}, { "url": "cookieClicker3.png", "caption": "Suggestion of upgrades for players"}],
+	"created_by": "Jea Park"
+	},
+	{"type":"long",
+	"product_name": "EdX",
+	"product_description": "EdX is an educational service which provides free massively online open courses. Content for the site is generated by prestigious universities such as Harvard and Berkeley. Users from all over the world can sign up for these courses and learn about a wide variety of topics ranging from chinese architecture to machine learning. The site’s design is clean and usability is clearly a high priority. From just a quick glance at their dashboard, users can easily find their registration information without being overwhelmed by cluttered navigation menus. <br><br> The main navigation on EdX strikes a good balanced between the number of tabs and the corresponding number of features. Each feature is clearly labelled and users don’t need to follow deep navigation schemes to find what they’re looking for. Based on feedback from our users, intuitive navigation is a high priority. For example, when we asked users to register for a course on my.olin.edu, no one was ever able to find the registration page on their first try. Each time, our users would click through at least two or three top level navigation tabs before exploring secondary navigation until achieving their intended task. We should adopt EdX’s navigation style so users can register for courses without having to take multiple random guesses about where the course registration button is located. <br><br> Another great feature of EdX is its course pages. Each course on EdX has a page which users can view to learn more about the subject matter. This page highlights key information about the class such as the expected coursework per week, the course description, and the required prerequisites. Additionally, users can register for the course here without having to remember long course numbers or course titles. Our design should incorporate a course description page with registration links because it lets the user register without having to search for official course titles and ids. We should also incorporate the time approximation feature because many users want to be able to maintain a reasonable course load and the four credit equals 12 hours of work heuristic is not always accurate. <br><br> A final inspiring feature of EdX is their course discussion page. This page gives users the opportunity to voice concerns to the professor and ask each other for help. Professors care about feedback but at Olin the only opportunity to receive formal feedback is from the end of year survey. A discussion page fosters more organic feedback and helps teachers get more insights directly from their students. For students, a course discussion page lets them know more about a class from their peers. Hearing about a course from a peer is more valuable than reading a course description since there are more details about the way the course is run from the perspective of a student.",
+	"images": [{ "url": "edx1.png", "caption": "EdX User Home Page"}, { "url": "edx2.png", "caption": "Main Navigation"}, { "url": "edx3.png", "caption": "Course Page"}, { "url": "edx4.png", "caption": "Course Discussion"}],
+	"created_by": "Nathan Lintz"
+	},
+
+
+	{"type":"short",
+	"product_name": "Lore",
+	"product_description": "Lore is an online service for creating course websites. Their site makes it easy to distribute information to students and start class discussions in the cloud",
+	"images": [{ "url": "lore1.png", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "HALP",
+	"product_description": "Course planning system created by and used by many Oliners, good layout, bad information, now gone",
+	"images": [{ "url": "halp1.jpeg", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Degree Audit",
+	"product_description": "Feature on sis that lists specific major requirements as well as more general ones - good information, bad layout",
+	"images": [{ "url": "degreeAudit1.jpeg", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Amazon Shopping",
+	"product_description": "Takes the things you’ve already bought and recommends future things to you.  options to add or remove difficulty/options",
+	"images": [{ "url": "amazonShopping1.jpeg", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Workflow Planning",
+	"product_description": "Shows the flow of work in a logical way and gives a person one step at a time",
+	"images": [{ "url": "workflowPlanning1.png", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Allison Black’s Spreadsheet",
+	"product_description": "Good information about majors and general requirements but a lot of (potentially unnecessary?) information to fill out",
+	"images": [{ "url": "allisonBlack1.jpeg", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Chutes and Ladders",
+	"product_description": "Interesting representation of paths - ladders to skip prereqs, slides to take classes in other disciplines, otherwise just moving through the curriculum",
+	"images": [{ "url": "chutesAndLadders1.gif", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Prezi",
+	"product_description": "Good visual model of flow and good way of visually presenting information",
+	"images": [{ "url": "prezi1.png", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "Outlook Calendar",
+	"product_description": "Outlook Calendar makes it easy for users to lay out and share their schedules. It helps users visualize their availible times and plan accordingly.",
+	"images": [{ "url": "outlookCalendar1.jpeg", "caption": ""}],
+	"created_by": ""
+	},
+	{"type":"short",
+	"product_name": "FilePicker.io",
+	"product_description": "FilePicker’s drag and drop widget is used by many sites to handle file uploads. Drag and drop upload is simpler than the standard upload tag in html which forces users to locate the file on their hard drive",
+	"images": [{ "url": "filepicker1.png", "caption": ""}],
+	"created_by": ""
+	}
+]

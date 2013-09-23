@@ -1,0 +1,15 @@
+.inspirational-design-container {
+	border: 1px solid;
+	border-radius:25px;
+	border-color: rgb(102, 102, 102);
+	margin-bottom: 1em;
+	padding: 0em 1em 1em 1em;
+}
+
+.inspirational-design-image-container {
+	margin-bottom: 1em;
+}
+
+.inspiration-design-image {
+	max-height: 40%;
+}
