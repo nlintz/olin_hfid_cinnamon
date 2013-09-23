@@ -41,8 +41,10 @@
 					<div ng-show="design.type == 'short'" class="col-md-12 col-sm-12 col-xs-12">
 						<div class="row text-center" ng-repeat="image in design.images">
 							<div class="col-md-12 col-sm-12 col-xs-12 inspirational-design-image-container">
-								<img ng-src="{{'public/images/inspirationalDesigns/'}}{{image.url}}" alt="..." class="img-thumbnail inspiration-design-image">
-								<figcaption>{{image.caption}}</figcaption>
+								<a class="fancybox" rel="group" href="{{'public/images/inspirationalDesigns/'}}{{image.url}}">
+									<img ng-src="{{'public/images/inspirationalDesigns/'}}{{image.url}}" alt="..." class="img-thumbnail inspiration-design-image">
+									<figcaption>{{image.caption}}</figcaption>
+								</a>
 							</div>
 						</div>
 					</div>
