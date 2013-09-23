@@ -1,4 +1,4 @@
 angular.module('teamCinnamon.services', []).
-	factory('', ['$http', function($http){
-			return $http.get()
+	factory('InspirationalDesignData', ['$http', '$location', function($http, $location){
+			return $http.get('public/json/inspirationalDesigns.json')
 		}])

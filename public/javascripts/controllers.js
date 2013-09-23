@@ -22,4 +22,9 @@ angular.module('teamCinnamon.controllers', []).
 				imgURL: "jea.png"
 			}
 		];
+	}]).
+	controller('inspirationalDesignsController', ['$scope', 'InspirationalDesignData', function($scope, InspirationalDesignData){
+		InspirationalDesignData.then(function(data){
+			console.log(data)
+		})
 	}])
