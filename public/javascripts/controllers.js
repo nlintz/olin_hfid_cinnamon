@@ -23,14 +23,18 @@ angular.module('teamCinnamon.controllers', []).
 			}
 		];
 	}]).
-	controller('inspirationalDesignsController', ['$scope', 'InspirationalDesignData', function($scope, InspirationalDesignData){
-		InspirationalDesignData.then(function(data){
-			$scope.inspirationalDesigns = data.data;
-			$scope.scrollTo = function(id){
-				var location = "#"+id;
-				$.scrollTo($(location), 500);
-			}
-			$('#inspirational-designs-side-nav').affix();
-			$(".fancybox").fancybox();
-		})
-	}])
+	controller('inspirationalDesignsController', ['$scope', 'InspirationalDesigns', function($scope, InspirationalDesigns){
+		$scope.inspirationalDesigns = InspirationalDesigns.data;
+
+		$scope.scrollTo = function(id){
+			var location = "#"+id;
+			$.scrollTo($(location), 500);
+		}
+
+		$(".fancybox").fancybox();
+
+
+		$('#inspirational-designs-side-nav').affix({
+			offset: { top: $('#inspirational-designs-side-nav').offset().top }
+		});
+	}]);
