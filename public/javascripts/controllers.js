@@ -12,7 +12,6 @@ angular.module('teamCinnamon.controllers', []).
 
 		$(".fancybox").fancybox();
 
-
 		$('#inspirational-designs-side-nav').affix({
 			offset: { top: $('#inspirational-designs-side-nav').offset().top }
 		});
