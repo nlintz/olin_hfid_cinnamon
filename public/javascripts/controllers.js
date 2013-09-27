@@ -1,18 +1,21 @@
-angular.module('teamCinnamon.controllers', []).
-	controller('teamController', ['$scope', 'Team', function($scope, Team){
-		$scope.teamMembers = Team.data;
-	}]).
-	controller('inspirationalDesignsController', ['$scope', 'InspirationalDesigns', function($scope, InspirationalDesigns){
-		$scope.inspirationalDesigns = InspirationalDesigns.data;
+var controllers = angular.module('teamCinnamon.controllers', [])
 
-		$scope.scrollTo = function(id){
-			var location = "#"+id;
-			$.scrollTo($(location), 500);
-		}
+controllers.controller('teamController', ['$scope', 'Team', function($scope, Team){
+	$scope.teamMembers = Team.data;
+}])
 
-		$(".fancybox").fancybox();
+controllers.controller('inspirationalDesignsController', ['$scope', 'InspirationalDesigns', function($scope, InspirationalDesigns){
+	$scope.inspirationalDesigns = InspirationalDesigns.data;
 
-		$('#inspirational-designs-side-nav').affix({
-			offset: { top: $('#inspirational-designs-side-nav').offset().top }
-		});
-	}]);
+	$scope.scrollTo = function(id){
+		var location = "#"+id;
+		$.scrollTo($(location), 500);
+	}
+
+	$(".fancybox").fancybox();
+
+	$('#inspirational-designs-side-nav').affix({
+		offset: { top: $('#inspirational-designs-side-nav').offset().top }
+	});
+}]);
+
