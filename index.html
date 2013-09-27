@@ -7,8 +7,12 @@
     <link href="lib/stylesheets/normalize.css" rel="stylesheet" media="screen">
     <link href="lib/stylesheets/jquery.fancybox.css" rel="stylesheet" media="screen">
     <link href="public/stylesheets/global.css" rel="stylesheet" media="screen">
-    <link href="public/stylesheets/animations.css" rel="stylesheet" media="screen">
+    <link href="public/stylesheets/animations.less" rel="stylesheet/less" media="screen">
     <link href="public/stylesheets/modules/inspirationalDesigns.css" rel="stylesheet" media="screen">
+
+    <!-- Less compiler script can live in the head -->
+    <script src="lib/javascripts/less.min.js"></script>
+
   </head>
   <body ng-cloak>
   <ng-include src=" 'partials/navigation.html' "></ng-include>
@@ -23,7 +27,6 @@
   <script src="lib/javascripts/bootstrap.min.js"></script>
   <script src="lib/javascripts/scrollTo.min.js"></script>
   <script src="lib/javascripts/affix.js"></script>
-  <script src="lib/javascripts/less.min.js"></script>
   <script type="text/javascript" src="lib/javascripts/jquery.fancybox.js"></script>
   </body>
 </html>
