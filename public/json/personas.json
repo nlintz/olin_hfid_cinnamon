@@ -1,0 +1,29 @@
+[
+	{"name":"Francis the Follower",
+	"imageUrl":"francis.png",
+	"quote":"Its no big deal - I'll just do what my sibb did",
+	"narrative":"Francis is a sophomore who is taking the classes he should be taking.  He’ll probably major in ECE because he likes the subject and those are the courses that his friends will be in.  He doesn’t really need to plan because he knows he can just follow the path that has been paved by countless ECEs before him, and he isn’t trying to get into extremely competitive classes.  He says hi to his advisor every once in awhile (generally around the time when he needs a signature to be allowed to register) but doesn’t really interact with him, or many other professors, outside of that context.  Francis assumes that everything will work out, because after all, the school wants him to graduate on time, right?",
+	"needs":["To spend as little time preparing for registering and actually registering", "To have a general feeling that they are on track", "Large blocks of non class time", "System which reliably works", "To know what other people are taking", "Peer approval"],
+	"values":["Efficiency", "Not breaking standards", "Graduating", "Learning outside of class", "Independence", "Going with the flow"],
+	"motivations":["Graduating with a traditional degree", "Find a successful path based on other students", "Gaining depth in specific subject areas", "Achieving personal goals"],
+	"areas_of_opportunity":["Visual representation of what classes you have/haven't taken", "Very visible information that they are on track", "A way to plan out/visualize time", "Shortening registration time"]
+	},
+	{"name":"Trail Blazing Tyler",
+	"imageUrl":"tyler.jpeg",
+	"quote":"I know everything will work out eventually",
+	"narrative":"Tyler is senior majoring in E:Innovation - he’s clearly paving his own way.  His diverse set of interests (including out-of-class commitments like REVO and swimming robotics research) make sure that he’s never bored…and always has plenty of work to do. If a course looks appealing to him, Tyler makes sure it fits into his schedule, whether it counts as part of his “major” or not.  Tyler is on track to graduate but not because he’s spent any time planning - in fact, he generally avoids planning, just because it makes things interesting.  He picks the classes that sound awesome first, then fits in those “requirements” if there’s extra space.  Tyler doesn’t really know what will happen after graduation, but knows he can use his contacts to get an amazing job somewhere that fits in with his current passions in sustainability, robotics, and entrepreneurship.",
+	"needs":["Flexibility", "Not worrying about graduating", "A strong internal model of their 'path'", "Complete autonomy over his schedule"],
+	"values":["Sharing his passion with others", "Originality", "Confidence", "Being Different", "Being a lone wolf"],
+	"motivations":["Intrinsic motivation", "Personal sense of acheivement", "Not motivated by pragmaticism", "Being true to 'themself'"],
+	"areas_of_opportunity":["Lower friction to self designed majors", "More flexible deadlines", "Responsive system to handle their academic interests"]
+	},
+	{"name":"Sara the Super Planner",
+	"imageUrl":"sara.png",
+	"quote":"Planning is fun! I use it as a break from my schoolwork.",
+	"narrative":"Sara is a junior who loves to plan.  She recently declared her major as E:Bio but is also interested in a variety of subjects.  She has had her own schedule planned since spring of freshman year and is constantly updating it.  She looks at planning as a social event - she collaborates with friends to gossip about courses and professors to take a break from her homework.  She tends to balance her course-load between electives and requirements, but always has in the back of her mind how each course contributes to her growth as a student and as a person.  Sara heavily relies on her advisor and a few other key faculty members for advice, both for her major requirements and for other advice.  After graduation, Sara is planning to attend graduate school and pursue a PhD in Immunology, and has already thought about how this extended schooling will influence her plans of getting married and having two kids.",
+	"needs":["Visualization of progress", "Easy to make and understand plans", "A backup plan", "Ability to share plans and planning", "Verification from her advisor that shes on the right track", "Support from friends and classmates for decisions", "Sense of achievement"],
+	"values":["Input from multiple people", "Thinking ahead", "Security for the future", "Collaboration", "Giving back to society", "Making and maintaining relationships"],
+	"motivations":["Combination of internal and external motivation", "Sense of purpose", "Being prepared for graduate school", "Success"],
+	"areas_of_opportunity":["Knowing more about upcomming teacher schedules", "More predictable course offerings", "Fixing bad error messages", "Different perspectives of their schedule"]
+	}
+]

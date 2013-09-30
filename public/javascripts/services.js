@@ -4,4 +4,10 @@ angular.module('teamCinnamon.services', []).
 		}]).
 	factory('Team', ['$http', function($http){
 			return $http.get('public/json/team.json')
+		}]).
+	factory('NeedsAnalysis', ['$http', function($http){
+			return $http.get('public/json/needsAnalysis.json')
+		}]).
+	factory('Personas', ['$http', function($http){
+			return $http.get('public/json/personas.json')
 		}])

@@ -19,6 +19,22 @@ controllers.controller('inspirationalDesignsController', ['$scope', 'Inspiration
 	});
 }]);
 
-controllers.controller('needsAnalysisController', ['$scope', function($scope){
-	// console.log('hello needs')
+controllers.controller('needsAnalysisController', ['$scope', 'NeedsAnalysis', 'Personas', function($scope, NeedsAnalysis, Personas){
+	$scope.needsAnalysis = NeedsAnalysis.data;
+	$scope.personas = Personas.data;
+	$scope.topics=["Design Brief", "Impacts", "Data Gathering", "Task Analysis", "Personas", "Design Narratives", "Methodology Shortcomings"]
+
+	$scope.scrollTo = function(id){
+		var location = "#"+id;
+		$.scrollTo($(location), 500);
+	}
+
+	$(".fancybox").fancybox();
+
+
+	$('#needs-analysis-side-nav').affix({
+		offset: { top: $('#needs-analysis-side-nav').offset().top }
+	});
+
+
 }])

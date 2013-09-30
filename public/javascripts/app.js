@@ -9,6 +9,6 @@ angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamC
 	      when('/inspirational_designs', 
 	      	{templateUrl: 'templates/inspirational_designs.html', controller: 'inspirationalDesignsController', resolve: {InspirationalDesigns: 'InspirationalDesign'}}).
 	      when('/needs_analysis', 
-	      	{templateUrl: 'templates/needs_analysis.html', controller:'needsAnalysisController'}).
+	      	{templateUrl: 'templates/needs_analysis.html', controller:'needsAnalysisController', resolve: {NeedsAnalysis: 'NeedsAnalysis', Personas: 'Personas'}}).
 	      otherwise({redirectTo: '/home'});
 }]);

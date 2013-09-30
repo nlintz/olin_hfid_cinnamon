@@ -1,0 +1,4 @@
+.image-thumbnail-constrained {
+	max-height: 40%;
+	min-height: 150px;
+}

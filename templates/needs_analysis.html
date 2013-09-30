@@ -1,5 +1,192 @@
 <div class="container fade-in">
 	<div class="page-header">
-		<h1>Team</h1>
+		<h1>Needs Analysis</h1>
 	</div>
+	<div class="row">
+		<div class="col-md-3 hidden-sm hidden-xs">
+			<div class="bs-sidebar" id="needs-analysis-side-nav">
+				<ul class="nav bs-sidenav">
+					<li ng-repeat="topic in topics">
+						<a href="" ng-click="scrollTo('scrollspyNav' + $index)">{{topic}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-9 col-sm-12 col-xs-12">
+
+			<!-- Problem Statement -->
+			<div class="row" id="scrollspyNav0">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Design Brief</h2>
+						<p>{{needsAnalysis.Problem_Statement.problem_description}}</p>
+						<ul>
+							<li ng-repeat="problem in needsAnalysis.Problem_Statement.key_problems">{{problem}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Impacts -->
+			<div class="row" id="scrollspyNav1">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Impacts</h2>
+						<h4>Our redesign of the course registration process will impact users in the following ways</h4>
+						<p ng-repeat="impact in needsAnalysis.Impact.impacts">
+							<em>{{impact.impact_title}}</em>
+							{{impact.impact_description}}
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Data Gathering -->
+			<div class="row" id="scrollspyNav2">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Data Gathering</h2>
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h4 class="text-center">Process</h4>
+								<p ng-bind-html-unsafe="needsAnalysis.Data_Gathering.process"></p>
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h4 class="text-center">Insights</h4>
+								<ul>
+									<li ng-repeat="insight in needsAnalysis.Data_Gathering.insights">
+										{{insight}}
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h4>Quotes</h4>
+								<ul>
+									<li ng-repeat="quote in needsAnalysis.Data_Gathering.quotes">
+										{{quote}}
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h4>Interview Synthesis</h4>
+								<a class="fancybox" rel="group" href="{{'public/images/needsAnalysis/'}}{{needsAnalysis.Data_Gathering.imageUrl}}">
+									<img ng-src="{{'public/images/needsAnalysis/'}}{{needsAnalysis.Data_Gathering.imageUrl}}" alt="..." class="img-thumbnail image-thumbnail-constrained">
+									<figcaption>{{needsAnalysis.Data_Gathering.imageCaption}}</figcaption>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Data Gathering -->
+			<div class="row" id="scrollspyNav3">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Task Analysis</h2>
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<p>From the user interviews, we derived a flow diagram showing the transfer of knowlege between users, stakeholders, and relevent artifacts used in course planning/registration.</p>
+								<a class="fancybox" rel="group" href="{{'public/images/needsAnalysis/'}}{{needsAnalysis.Task_Analysis.activityFlowUrl}}">
+									<img ng-src="{{'public/images/needsAnalysis/'}}{{needsAnalysis.Task_Analysis.activityFlowUrl}}" alt="..." class="img-thumbnail image-thumbnail-constrained">
+								</a>
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<p>This diagram shows how the task of course registration can be broken down into subtasks. Its important to consider the interaction for each subtask to best serve user's needs.</p>
+								<a class="fancybox" rel="group" href="{{'public/images/needsAnalysis/'}}{{needsAnalysis.Task_Analysis.taskFlowUrl}}">
+									<img ng-src="{{'public/images/needsAnalysis/'}}{{needsAnalysis.Task_Analysis.taskFlowUrl}}" alt="..." class="img-thumbnail image-thumbnail-constrained">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Personas -->
+			<div class="row" id="scrollspyNav4">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Personas</h2>
+						<div class="row" ng-repeat="persona in personas">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<h3 class="">{{persona.name}}</h3>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6 text-center">
+										<a class="fancybox" rel="group" href="{{'public/images/needsAnalysis/'}}{{persona.imageUrl}}">
+											<img ng-src="{{'public/images/needsAnalysis/'}}{{persona.imageUrl}}" alt="..." class="img-thumbnail image-thumbnail-constrained">
+											<figcaption>"{{persona.quote}}"</figcaption>
+										</a>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p>{{persona.narrative}}</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<h4 class="text-center">Needs</h4>
+										<ul>
+											<li ng-repeat="need in persona.needs">
+												{{need}}
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<h4 class="text-center">Values</h4>
+										<ul>
+											<li ng-repeat="value in persona.values">
+												{{value}}
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<h4 class="text-center">Motivations</h4>
+										<ul>
+											<li ng-repeat="motivation in persona.motivations">
+												{{motivation}}
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<h4 class="text-center">Areas of Opportunity</h4>
+										<ul>
+											<li ng-repeat="area_of_opportunity in persona.areas_of_opportunity">
+												{{area_of_opportunity}}
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						<hr>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Design Narrative -->
+			<div class="row" id="scrollspyNav5">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Design Narrative</h2>
+						<p ng-bind-html-unsafe="needsAnalysis.Design_Narrative.narrative"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="scrollspyNav6">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Methodology Shortcomings</h2>
+						<ul>
+							<li ng-repeat="shortcoming in needsAnalysis.Shortcomings.shortcomings">{{shortcoming}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
