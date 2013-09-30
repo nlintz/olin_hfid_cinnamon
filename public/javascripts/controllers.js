@@ -19,3 +19,6 @@ controllers.controller('inspirationalDesignsController', ['$scope', 'Inspiration
 	});
 }]);
 
+controllers.controller('needsAnalysisController', ['$scope', function($scope){
+	// console.log('hello needs')
+}])
