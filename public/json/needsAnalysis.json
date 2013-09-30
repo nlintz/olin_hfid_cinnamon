@@ -46,6 +46,6 @@
 	 },
 	"Task_Analysis": {"topic_name": "Task Analysis",
 	"activityFlowUrl":"UsersActivityFlow.png",
-	"taskFlowUrl":"TaskFlow.png"},
+	"taskFlowUrl":"Taskflow.png"},
 	"Personas": {"topic_name": "Personas"}
 }
