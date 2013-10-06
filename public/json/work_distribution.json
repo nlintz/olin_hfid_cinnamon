@@ -1,0 +1,95 @@
+[
+	{"deliverable_title": "Research",
+	"sub_deliverables": [
+		{"sub_deliverable_title": "Project Brief",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Consent Narrative",
+		"chaz": "10",
+		"jea": "10",
+		"nathan": "10",
+		"sharon": "70"
+		},
+		{"sub_deliverable_title": "Inspirational Designs",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Design Artifacts",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		}
+	]
+	}, 
+	{"deliverable_title": "Needs Analysis",
+	"sub_deliverables": [
+		{"sub_deliverable_title": "Website",
+		"chaz": "0",
+		"jea": "0",
+		"nathan": "100",
+		"sharon": "0"
+		},
+		{"sub_deliverable_title": "Design Brief",
+		"chaz": "10",
+		"jea": "10",
+		"nathan": "10",
+		"sharon": "70"
+		},
+		{"sub_deliverable_title": "Impacts",
+		"chaz": "40",
+		"jea": "20",
+		"nathan": "20",
+		"sharon": "20"
+		},
+		{"sub_deliverable_title": "Data Gathering",
+		"chaz": "20",
+		"jea": "20",
+		"nathan": "20",
+		"sharon": "40"
+		},
+		{"sub_deliverable_title": "Task Analysis",
+		"chaz": "30",
+		"jea": "30",
+		"nathan": "40",
+		"sharon": "0"
+		},
+		{"sub_deliverable_title": "Personas",
+		"chaz": "10",
+		"jea": "10",
+		"nathan": "10",
+		"sharon": "70"
+		},
+		{"sub_deliverable_title": "Design Narratives",
+		"chaz": "20",
+		"jea": "40",
+		"nathan": "20",
+		"sharon": "20"
+		},
+		{"sub_deliverable_title": "Methodology Shortcomings",
+		"chaz": "20",
+		"jea": "20",
+		"nathan": "20",
+		"sharon": "40"
+		},		
+		{"sub_deliverable_title": "Big Needs",
+		"chaz": "100",
+		"jea": "0",
+		"nathan": "0",
+		"sharon": "0"
+		},
+		{"sub_deliverable_title": "Team Contract",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		}
+	]
+	}
+
+]
