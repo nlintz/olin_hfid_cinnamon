@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="page-header">
+		<h1>Work Distribution</h1>
+	</div>
+	<table class="table-striped table">
+		<tr>
+			<td><b>Deliverable</b></td>
+			<td><b>Activity</b></td>
+			<td><b>Chaz</b></td>
+			<td><b>Jea</b></td>
+			<td><b>Nathan</b></td>
+			<td><b>Sharon</b></td>
+			<td><b>Total</b></td>
+		</tr>
+		<tr ng-repeat="activity in research.sub_deliverables">
+			<td>Research</td>
+			<td>{{activity.sub_deliverable_title}}</td>
+			<td>{{activity.chaz}}</td>
+			<td>{{activity.jea}}</td>
+			<td>{{activity.nathan}}</td>
+			<td>{{activity.sharon}}</td>
+			<td>{{activity.chaz + activity.jea + activity.nathan + activity.sharon}}</td>
+		</tr>
+		<tr ng-repeat="activity in needsAnalysis.sub_deliverables">
+			<td>Needs Analysis</td>
+			<td>{{activity.sub_deliverable_title}}</td>
+			<td>{{activity.chaz}}</td>
+			<td>{{activity.jea}}</td>
+			<td>{{activity.nathan}}</td>
+			<td>{{activity.sharon}}</td>
+			<td>{{activity.chaz + activity.jea + activity.nathan + activity.sharon}}</td>
+		</tr>
+	</table>
+</div>

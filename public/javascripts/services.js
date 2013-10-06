@@ -10,4 +10,7 @@ angular.module('teamCinnamon.services', []).
 		}]).
 	factory('Personas', ['$http', function($http){
 			return $http.get('public/json/personas.json')
+		}]).
+	factory('WorkDistribution', ['$http', function($http){
+			return $http.get('public/json/workDistribution.json')
 		}])

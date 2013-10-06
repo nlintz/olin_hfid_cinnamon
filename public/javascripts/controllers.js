@@ -1,8 +1,8 @@
-var controllers = angular.module('teamCinnamon.controllers', [])
+var controllers = angular.module('teamCinnamon.controllers', []);
 
 controllers.controller('teamController', ['$scope', 'Team', function($scope, Team){
 	$scope.teamMembers = Team.data;
-}])
+}]);
 
 controllers.controller('inspirationalDesignsController', ['$scope', 'InspirationalDesigns', function($scope, InspirationalDesigns){
 	$scope.inspirationalDesigns = InspirationalDesigns.data;
@@ -10,7 +10,7 @@ controllers.controller('inspirationalDesignsController', ['$scope', 'Inspiration
 	$scope.scrollTo = function(id){
 		var location = "#"+id;
 		$.scrollTo($(location), 500);
-	}
+	};
 
 	$(".fancybox").fancybox();
 
@@ -22,12 +22,12 @@ controllers.controller('inspirationalDesignsController', ['$scope', 'Inspiration
 controllers.controller('needsAnalysisController', ['$scope', 'NeedsAnalysis', 'Personas', function($scope, NeedsAnalysis, Personas){
 	$scope.needsAnalysis = NeedsAnalysis.data;
 	$scope.personas = Personas.data;
-	$scope.topics=["Design Brief", "Impacts", "Data Gathering", "Task Analysis", "Personas", "Design Narratives", "Methodology Shortcomings"]
+	$scope.topics=["Design Brief", "Impacts", "Data Gathering", "Task Analysis", "Personas", "Design Narratives", "Methodology Shortcomings"];
 
 	$scope.scrollTo = function(id){
 		var location = "#"+id;
 		$.scrollTo($(location), 500);
-	}
+	};
 
 	$(".fancybox").fancybox();
 
@@ -37,4 +37,10 @@ controllers.controller('needsAnalysisController', ['$scope', 'NeedsAnalysis', 'P
 	});
 
 
-}])
+}]);
+
+controllers.controller('workDistributionController', ['$scope', 'WorkDistribution', function($scope, WorkDistribution){
+	$scope.workDistribution = WorkDistribution.data;
+	$scope.research = $scope.workDistribution[0];
+	$scope.needsAnalysis = $scope.workDistribution[1];
+}]);
