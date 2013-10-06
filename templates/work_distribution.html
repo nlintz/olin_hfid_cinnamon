@@ -19,7 +19,7 @@
 			<td>{{activity.jea}}</td>
 			<td>{{activity.nathan}}</td>
 			<td>{{activity.sharon}}</td>
-			<td>{{activity.chaz + activity.jea + activity.nathan + activity.sharon}}</td>
+			<td>{{[activity.chaz, activity.jea, activity.nathan, activity.sharon] | sum}}</td>
 		</tr>
 		<tr ng-repeat="activity in needsAnalysis.sub_deliverables">
 			<td>Needs Analysis</td>
@@ -28,7 +28,6 @@
 			<td>{{activity.jea}}</td>
 			<td>{{activity.nathan}}</td>
 			<td>{{activity.sharon}}</td>
-			<td>{{activity.chaz + activity.jea + activity.nathan + activity.sharon}}</td>
-		</tr>
+			<td>{{[activity.chaz, activity.jea, activity.nathan, activity.sharon] | sum}}</td>
 	</table>
 </div>

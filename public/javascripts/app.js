@@ -1,4 +1,4 @@
-angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamCinnamon.services', 'teamCinnamon.directives']).
+angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamCinnamon.services', 'teamCinnamon.directives', 'teamCinnamon.filters']).
 	config(['$routeProvider', function($routeProvider) {
 	  $routeProvider.
 	      when('/home', {templateUrl: 'templates/home.html'}).
