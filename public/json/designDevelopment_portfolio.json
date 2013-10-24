@@ -27,7 +27,7 @@
 "url":"portfolio9.JPG"},
 {"description":"This design let users select more classes than they planned to take and then go through a “checkout” phase to register. In “checkout”, users could see what schedules were possible and select the ideal set of courses for them. In the current registration process, students need to use a tool like Outlook to visualize course conflicts. By “checking out” before they register, students could pick any classes they are interested in and the interface would compute the visual representations, meeting the schedule visualization need of our users. Including a calendar in the paper prototype was well received so we included the visualization feature in our final product.",
 "caption":"Design #10: “Checkout,” inspired by Amazon",
-"url":"portfolio10.jpg"},
+"url":"portfolio10.JPG"},
 {"description":"This design let users drop classes into different semesters to construct a four year plan. Our users, particularly those who fall into the Sara the Super-Planner category, expressed the need to plan out their schedules using tools like Microsoft Excel. This design aimed to make the process simpler by having a listing of all classes and letting users drag-and-drop classes instead of typing them into boxes. Since the design was more focused around planning instead of registration, we simplified this interface by removing the four-year plan, suggestions, and wish-list.",
 "caption":"Design #11: Drag and Drop Course Planner",
 "url":"portfolio11.JPG"},
