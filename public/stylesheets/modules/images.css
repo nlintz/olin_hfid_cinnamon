@@ -2,3 +2,8 @@
 	max-height: 40%;
 	min-height: 150px;
 }
+
+.interaction-thumbnail {
+	margin: auto;
+	min-height: 75%;
+}

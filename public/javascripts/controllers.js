@@ -37,12 +37,14 @@ controllers.controller('needsAnalysisController', ['$scope', 'NeedsAnalysis', 'P
 	});
 }]);
 
-controllers.controller('designDevelopmentController', ['$scope', 'Insights', function($scope, Insights){
+controllers.controller('designDevelopmentController', ['$scope', 'Insights', 'DesignDevelopmentAlternatives', 'Portfolio', 'Interactions', function($scope, Insights, DesignDevelopmentAlternatives, Portfolio, Interactions){
 	// $scope.needsAnalysis = NeedsAnalysis.data;
 	// $scope.personas = Personas.data;
 	$scope.topics=["User Needs", "Design", "Interaction Flow", "Strengths", "User Feedback", "Key Insights", "Alternative Designs", "Idea Portfolio"];
 	$scope.insights = Insights.data;
-
+	$scope.alternatives = DesignDevelopmentAlternatives.data;
+	$scope.portfolio = Portfolio.data;
+	$scope.interactions = Interactions.data;
 	$scope.scrollTo = function(id){
 		var location = "#"+id.split(' ').join('');
 		console.log(location)
@@ -75,4 +77,5 @@ controllers.controller('workDistributionController', ['$scope', 'WorkDistributio
 	$scope.workDistribution = WorkDistribution.data;
 	$scope.research = $scope.workDistribution[0];
 	$scope.needsAnalysis = $scope.workDistribution[1];
+	$scope.designDevelopment = $scope.workDistribution[2];
 }]);

@@ -11,7 +11,7 @@ angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamC
 		  when('/needs_analysis', 
 			{templateUrl: 'templates/needs_analysis.html', controller:'needsAnalysisController', resolve: {NeedsAnalysis: 'NeedsAnalysis', Personas: 'Personas'}}).
 		  when('/design_development', 
-			{templateUrl: 'templates/design_development.html', controller:'designDevelopmentController', resolve: {Insights: 'DesignDevelopmentInsights'}}).
+			{templateUrl: 'templates/design_development.html', controller:'designDevelopmentController', resolve: {Insights: 'DesignDevelopmentInsights', DesignDevelopmentAlternatives: 'DesignDevelopmentAlternatives', Portfolio: 'Portfolio', Interactions: 'Interactions'}}).
 		  when('/work_distribution',
 			{templateUrl: 'templates/work_distribution.html', controller: 'workDistributionController', resolve: {WorkDistribution: 'WorkDistribution'}}).
 		  when('/story_boards',

@@ -90,6 +90,39 @@
 		"sharon": "25"
 		}
 	]
+	},
+	{"deliverable_title": "Design Development",
+	"sub_deliverables": [
+		{"sub_deliverable_title": "Portfolio of Design Ideas",
+		"chaz": "20",
+		"jea": "20",
+		"nathan": "30",
+		"sharon": "30"
+		},
+		{"sub_deliverable_title": "Design Sketches",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Interaction Flow/Storyboard Mapping",
+		"chaz": "10",
+		"jea": "10",
+		"nathan": "40",
+		"sharon": "40"
+		},
+		{"sub_deliverable_title": "Paper Prototype",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Testing Report",
+		"chaz": "30",
+		"jea": "30",
+		"nathan": "20",
+		"sharon": "20"
+		}
+	]
 	}
-
 ]

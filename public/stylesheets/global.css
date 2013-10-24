@@ -1,4 +1,11 @@
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
-#galleria{ width: 700px; height: 400px; background: #000 }
+
+.carousel-inner>div{
+	padding-bottom: 100px;
+}
+
+.carousel-caption {
+	bottom:5px;
+}
