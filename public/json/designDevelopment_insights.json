@@ -1,0 +1,12 @@
+[
+{"insight_title":"Preserve the user’s autonomy throughout the process.",
+"insight_description":"Use the interface to support the user and the user’s goals, instead of taking away those goals by over-simplifying the interface. 'Resolving conflicts is on me. I want to see conflicts.'"},
+{"insight_title":"Know the physical limitations on the interface",
+"insight_description":"For instance, keep in mind how much screen space you have when creating a web interface. Don’t try to get all information on the screen at once because you will quickly overcomplicate the process."},
+{"insight_title":"Remember how size impacts user focus.",
+"insight_description":"For example, a large and detailed filter menu will distract users from a simpler search box, even if that search box is more helpful to the user. Make features that the user will use more often prominent and recognizable."},
+{"insight_title":"Focus on perfecting the general case instead of worrying about edge cases.",
+"insight_description":"A team can get easily distracted by edge cases and spend too much time in relation to the number of times the user encounters this case. It is important to nail the case that all users will be coming to the interface: in the case of our design, this is to register for the next semester, rather than focusing on the four-year plan that only benefits Sara."},
+{"insight_title":"Remember how stakeholders currently interact and how this will impact a proposed change in behavior.",
+"insight_description":"For example, our proposed social scheduling feature received negative feedback because users weren’t used to the idea and were uncomfortable with the perceived invasion of privacy. A feature as such would require a major change in our users’ view of scheduling, a view that they don’t necessarily want to change. Also, from the registrar’s point of view, a dramatic change in the interaction will pose a threshold to overcome and to adapt. We made sure the changes implied in our proposed design do not become a burden to stakeholders."}
+]

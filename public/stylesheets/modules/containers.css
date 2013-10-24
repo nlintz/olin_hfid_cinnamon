@@ -1,7 +1,17 @@
+.square-container {
+	border: 15px solid;
+	/*border-radius:25px;*/
+	/*border-color: rgb(102, 102, 102);*/
+	border-color: gray;
+	margin-bottom: 1em;
+	padding: 0em 1em 1em 1em;
+}
+
 .rounded-container {
 	border: 1px solid;
 	border-radius:25px;
 	border-color: rgb(102, 102, 102);
+	border-color: gray;
 	margin-bottom: 1em;
 	padding: 0em 1em 1em 1em;
 }

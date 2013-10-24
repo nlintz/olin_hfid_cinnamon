@@ -1,4 +1,4 @@
-angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamCinnamon.services', 'teamCinnamon.directives', 'teamCinnamon.filters']).
+angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamCinnamon.services', 'teamCinnamon.directives', 'teamCinnamon.filters', 'ui.bootstrap']).
 	config(['$routeProvider', function($routeProvider) {
 	  $routeProvider.
 		  when('/home', {templateUrl: 'templates/home.html'}).
@@ -10,6 +10,8 @@ angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamC
 			{templateUrl: 'templates/inspirational_designs.html', controller: 'inspirationalDesignsController', resolve: {InspirationalDesigns: 'InspirationalDesign'}}).
 		  when('/needs_analysis', 
 			{templateUrl: 'templates/needs_analysis.html', controller:'needsAnalysisController', resolve: {NeedsAnalysis: 'NeedsAnalysis', Personas: 'Personas'}}).
+		  when('/design_development', 
+			{templateUrl: 'templates/design_development.html', controller:'designDevelopmentController', resolve: {Insights: 'DesignDevelopmentInsights'}}).
 		  when('/work_distribution',
 			{templateUrl: 'templates/work_distribution.html', controller: 'workDistributionController', resolve: {WorkDistribution: 'WorkDistribution'}}).
 		  when('/story_boards',

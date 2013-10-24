@@ -1,0 +1,242 @@
+<div class="container fade-in">
+	<div class="page-header">
+		<h1>Design Development</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-3 hidden-sm hidden-xs">
+			<div class="bs-sidebar" id="needs-analysis-side-nav">
+				<ul class="nav bs-sidenav">
+					<li ng-repeat="topic in topics">
+						<a href="" ng-click="scrollTo(topic)">{{topic}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-9 col-sm-12 col-xs-12">
+			<div id="UserNeeds" class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">User Needs</h2>
+						<p>We determined from our needs analysis that our design should impact users by providing an intuitive, visual and stress-free registration process which enables users to schedule courses effectively. In addition, each of our three personas has additional priorities that needed to be taken into account for our design. Francis the Follower needs to know what courses he is required to take, Trailblazing Tyler wants to be able to easily (and flexibly) manipulate his schedule within the registration system, and Sara the Super-planner wants to visualize her progress.
+						</p>
+						<div class="row">
+							<div class="col-md-4 col-xs-3">
+								<img ng-src="public/images/needsAnalysis/francis.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+								<figcaption>{{}}</figcaption>
+							</div>
+							<div class="col-md-4 col-xs-3">
+								<img ng-src="public/images/needsAnalysis/sara.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+								<figcaption>{{}}</figcaption>
+							</div>
+							<div class="col-md-4 col-xs-3">
+								<img ng-src="public/images/needsAnalysis/tyler.jpeg" alt="..." class="img-thumbnail image-thumbnail-constrained">
+								<figcaption>{{}}</figcaption>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									While we initially attempted to combine many different features into the registration system, we found out when prototyping with our users that this resulted in the interface becoming too complicated to be intuitive. Therefore, the final design focused on streamlining the registration process and giving instant visual user feedback. Our users responded positively toward this “instant gratification” and heavy visualization of schedule and registration.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<a class="fancybox" rel="group" href="public/images/designDevelopment/jeaAndSharon.JPG">
+									<img ng-src="public/images/designDevelopment/jeaAndSharon.JPG" alt="..." class="img-thumbnail inspiration-design-image">
+									<figcaption>{{image.caption}}</figcaption>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<a class="fancybox" rel="group" href="public/images/designDevelopment/paperPrototypingSynthesis.JPG">
+									<img ng-src="public/images/designDevelopment/paperPrototypingSynthesis.JPG" alt="..." class="img-thumbnail inspiration-design-image">
+									<figcaption>{{image.caption}}</figcaption>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>To explore the space of course registration and address the needs and values of our users, we brainstormed and sketched several possible designs. The more fleshed-out designs are presented with short descriptions in our Design Portfolio. We then chose three designs that spanned the space that we had brainstormed in and connected those once more back to our personas, imagining how Francis, Tyler, and Sara would interact with each of the interfaces. From this exercise, we developed an interface that addressed all of our users’ needs and proceeded into the paper prototyping and testing phase, where we modified our design on-the-go to address user feedback. We ultimately ended up with the final design presented below.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="Design">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="rounded-container">
+						<h2 class="text-center">Design</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<p>Our new interface reflects the four major categories in course registration: viewing graduation and major requirements, viewing specific course information, building a list of courses for next semester, and avoiding time conflicts.
+										</p>
+										<p>Through this interface, students can approach course registration from two different views. One major need of students is to visualize their progress toward graduation and then use that information to register for the next semester. 
+										</p>
+									</div>	
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-md-offset-4">
+										<a class="fancybox" rel="group" href="public/images/designDevelopment/paperPrototype1.JPG">
+											<img ng-src="public/images/designDevelopment/paperPrototype1.JPG" alt="..." class="img-thumbnail">
+											<figcaption>{{image.caption}}</figcaption>
+										</a>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p>The “Requirements” view fulfills this need to visualize progress by providing a list of major and general requirements personalized for the student. The student can easily see what courses have been taken and what courses are left, and directly add these courses from the requirements list. The student gets instant feedback after clicking the “add” button when the course appears in their “Upcoming Semester” sidebar and appears in the calendar frame on the right. This set of visualization tools communicates the information in multiple ways so that the user can quickly view the proposed schedule as well as visualize major requirements and time conflicts. By combining these three categories in registration, we give students complete autonomy over their schedule as well as verification that they are on track.
+										</p>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-4 col-md-offset-4">
+										<a class="fancybox" rel="group" href="public/images/designDevelopment/paperPrototype2.JPG">
+											<img ng-src="public/images/designDevelopment/paperPrototype2.JPG" alt="..." class="img-thumbnail">
+											<figcaption>{{image.caption}}</figcaption>
+										</a>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p>Out of the four categories in registration listed above, the only remaining is viewing specific course information. For more information, students can either search from the “Requirements” tab or directly enter the “Find Courses” view. The search function is “smart” in that students can successfully find courses using an acronym or nickname. This is to address the need of a robust system that does what the user expects in as many cases as possible. The search feature also supports keywords like faculty member names (ex: Lynn Stein) and distribution (ex: AHS); again, this is to provide the information that the user is asking for and responding in a way that the user expects. From these search results, students can either add a course or view more information on a course by clicking the appropriate button. The “Upcoming Semester” sidebar and the calendar frame of the “Requirements” view are again visible in this “Find Classes” view to provide user feedback and promote consistency across the site. 
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-md-offset-4">
+										<a class="fancybox" rel="group" href="public/images/designDevelopment/paperPrototype3.JPG">
+											<img ng-src="public/images/designDevelopment/paperPrototype3.JPG" alt="..." class="img-thumbnail">
+											<figcaption>{{image.caption}}</figcaption>
+										</a>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p>If a student wishes to learn more about a course, they can click on the search results of their class to view a course description page. From the course description page, students are also able to register for classes. This interaction makes it simpler for students to find new classes because they can learn about classes they otherwise wouldn’t take and register instantly.
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="InteractionFlow" class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="rounded-container">
+								<h2 class="text-center">Interaction Flow</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="Strengths" class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="rounded-container">
+								<h2 class="text-center">Strengths</h2>
+								<div class="row">
+									<div class="col-md-12">
+										<p>Our interface ensures that all information input in one part of the website is saved and is accessible from other screens. For example, when a student adds a class to a semester’s schedule, that class shows up on the “Upcoming Semester” sidebar as well as in the calendar view. If the student selects a required course, this will also update the requirements page. This is an insight that came from our user testing - students want to have key information accessible in multiple formats and in multiple places.
+										</p>
+										<p>We also separate the selection of courses from registration. Students are allowed to queue classes in the “Upcoming Semester” sidebar prior to registration. They can resolve time conflicts or explore a wider variety of options before finalizing the list of courses for next semester. This is in response to an issue that was shared by multiple students, which one student described as “I would like to register at my own convenience rather than the time deemed by the registrar.” Because the current registration system is difficult enough for the registrar, we have tried to adapt our system to the current system as much as possible. Thus, to fulfill both the desire of the student to register at his or her own convenience and the desire of the registrar to have all of the information by a certain time, we have included an auto-registration feature in our interface. This is accomplished by having the student input a list of courses in the prioritized order and having that list locked down at a certain pre-specified time. This satisfies both the students and the registrar: the students can edit the list whenever it is convenient for them, prior to the deadline.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="UserFeedback" class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="rounded-container">
+								<h2 class="text-center">User Feedback</h2>
+								<div class="row">
+									<div class="col-md-12">
+										<p>Our users did indicate a few areas of concern, which we are in the process of addressing. First, a few of the features that we had assumed were intuitive were not actually as obvious to our users as we had hoped. For instance, the “Upcoming Semester” sidebar is intended to be a quick and easy way to view the currently added classes. After an explanation, our users really liked this feature and appreciated the instant feedback it gave them and the flexibility it gave them during the registration process. However, the goal of this feature was not immediately obvious. Therefore, we are rethinking the design of this feature and have provided a help button for more information. In the same vein, the calendar feature was very highly regarded by our users. Its initial point of conveying schedule conflicts works flawlessly. However, each user had a different idea of the other included functions within the calendar, and only one found the feature of quickly changing between sections of a class by clicking on the other section. In response to this, we are rethinking the features that should be included in this calendar (in addition to scheduling conflicts) and how to better convey those features to the user.
+										</p>
+										<p>Second, we have included two different ways to search, which is helpful in the context that we have implemented it but is confusing since they behave in different ways. The main search feature, accessed through the search bar, handles almost all of the searches (of classes, professors, or colorings, etc.) and works in the way that a traditional search would work (by providing the searcher with a list of results). The more specific search of just classes available in the next semester is accessed underneath the “Upcoming Semester” sidebar. The only function of this search is to directly add classes to the next semester’s schedule, in order to give superusers such as Sara a quick and easy way to register. Both functions are important in different ways, but since the perceived same search feature yields different results in the two contexts, the user’s mental model is tested. We are working to resolve this conflict in the mental model by differentiating the two search features and thus creating two separate mental models that correspond to the two separate functionalities.
+										</p>
+										<p>Finally, we know that we can never satisfy everyone. Some people prefer the “Find Classes” page as the default page when the user logs in and others prefer the “Requirements” page. We have decided to use the “Requirements” page as the default since it provides the information that the user more likely needs to see before registration (the requirements). We know that this page is important to both Sara and Francis, even though Tyler places much less emphasis on this page.
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="KeyInsights">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="InteractionFlow" class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="rounded-container">
+								<h2 class="text-center">Key Insights</h2>
+								<div ng-repeat="insight in insights" class="row">
+									<div class="col-md-12">
+										<p><em>{{insight.insight_title}}</em>{{insight.insight_description}}</p
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<h1 class="text-center">Appendix</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="AlternativeDesigns" class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="rounded-container">
+								<h2 class="text-center">Alternative Designs</h2>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row" ng-repeat="sketch in DesignSketches">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="IdeaPortfolio" class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="rounded-container">
+								<h2 class="text-center">Idea Portfolio</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- 			<div class="row">
+				<ng-include src=" 'partials/portfolioCarousel.html' "></ng-include>
+			</div>
+ -->	</div>
+	</div>
+</div>

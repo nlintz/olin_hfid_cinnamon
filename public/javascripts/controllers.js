@@ -35,7 +35,39 @@ controllers.controller('needsAnalysisController', ['$scope', 'NeedsAnalysis', 'P
 	$('#needs-analysis-side-nav').affix({
 		offset: { top: $('#needs-analysis-side-nav').offset().top }
 	});
+}]);
 
+controllers.controller('designDevelopmentController', ['$scope', 'Insights', function($scope, Insights){
+	// $scope.needsAnalysis = NeedsAnalysis.data;
+	// $scope.personas = Personas.data;
+	$scope.topics=["User Needs", "Design", "Interaction Flow", "Strengths", "User Feedback", "Key Insights", "Alternative Designs", "Idea Portfolio"];
+	$scope.insights = Insights.data;
+
+	$scope.scrollTo = function(id){
+		var location = "#"+id.split(' ').join('');
+		console.log(location)
+		$.scrollTo($(location), 500);
+	};
+
+	$(".fancybox").fancybox();
+
+
+	$('#needs-analysis-side-nav').affix({
+		offset: { top: $('#needs-analysis-side-nav').offset().top }
+	});
+	slides = [];
+	slides.push({
+      image: 'public/images/cinnamon.jpeg',
+      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
+        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+    });
+    slides.push({
+      image: 'public/images/cinnamon.jpeg',
+      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
+        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+    });
+
+    $scope.slides = slides;
 
 }]);
 
