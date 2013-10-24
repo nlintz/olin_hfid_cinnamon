@@ -47,7 +47,6 @@ controllers.controller('designDevelopmentController', ['$scope', 'Insights', 'De
 	$scope.interactions = Interactions.data;
 	$scope.scrollTo = function(id){
 		var location = "#"+id.split(' ').join('');
-		console.log(location)
 		$.scrollTo($(location), 500);
 	};
 
