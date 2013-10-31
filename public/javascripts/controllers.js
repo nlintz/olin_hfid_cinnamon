@@ -72,6 +72,10 @@ controllers.controller('designDevelopmentController', ['$scope', 'Insights', 'De
 
 }]);
 
+controllers.controller('wireframeSitemapController', ['$scope', function($scope){
+		$(".fancybox").fancybox();
+}]);
+
 controllers.controller('workDistributionController', ['$scope', 'WorkDistribution', function($scope, WorkDistribution){
 	$scope.workDistribution = WorkDistribution.data;
 	$scope.research = $scope.workDistribution[0];
