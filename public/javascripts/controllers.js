@@ -82,3 +82,7 @@ controllers.controller('workDistributionController', ['$scope', 'WorkDistributio
 	$scope.needsAnalysis = $scope.workDistribution[1];
 	$scope.designDevelopment = $scope.workDistribution[2];
 }]);
+
+controllers.controller('designRefinementController', ['$scope', function($scope){
+
+}])
