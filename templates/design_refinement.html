@@ -3,90 +3,168 @@
 		<h1>Design Refinement</h1>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
-			<a class="btn btn-primary btn-lg" role="button" href="http://cinnamon-course-registration.herokuapp.com/#/login" target="_blank">Click Here To Visit The Web Site</a>
-		</div>
-		<div class="col-md-12">
-			<div class="container">
-				<h1>Instructions</h1>
+		<div class="col-md-3 hidden-sm hidden-xs">
+			<div class="bs-sidebar" id="inspirational-designs-side-nav">
+				<ul class="nav bs-sidenav">
+					<li ng-repeat="heading in headings">
+						<a href="" ng-click="scrollTo(heading)">{{heading}}</a>
+					</li>
+				</ul>
 			</div>
-			<p>Google Chrome is an awesome browser. You should use it. Please use your username. You don’t have to input a password. Assume the following courses are the only ones in the course catalog:</p>
-			<ul>
-				<li>Art of Approximation</li>
-				<li>Dynamics</li>
-				<li>Fundamentals of Machine Shop Operations</li>
-				<li>Human Factors in Interface Design</li>
-				<li>Materials Science</li>
-				<li>Mechanical Design</li>
-				<li>Mechanical Prototyping</li>
-				<li>Principles of Modern Biology</li>
-				<li>Probability and Statistics</li>
-				<li>Responsive Drawing and Visual Thinking</li>
-				<li>Senior Capstone Program in Engineering</li>
-				<li>Thermodynamics</li>
-			</ul>
 		</div>
-		<div class="col-md-12">
-			<div class="container">
-				<h1>Tasks</h1>
+
+		<div class="col-md-9">
+			<div class="row" id="DesignOverview">
+				<div class="col-md-12">
+					<h2>Design Overview</h2>
+					<p>Having come up with an initial design of the interface during the paper prototyping stage, our goal in this stage was to create a works-like prototype and use it to further refine our design.
+					</p>
+					<p>The interface is working to address five major needs that are common to almost all of our users:
+					</p>
+					<ul>
+						<li>Simple and intuitive interface</li>
+						<li>Clear visualization of progress</li>
+						<li>Easy access to desired information</li>
+						<li>Continual feedback throughout the process</li>
+						<li>Multiple routes to access information</li>
+					</ul>
+					<p>In this interface, students still have the option to approach course registration from two different views - based on requirements and based on a course list.  These two views correspond to the two major screens in the application, the Requirements screen and the Find Classes screen.
+					</p>
+					<br>
+					<p>
+					The “Requirements” view fulfills the need to visualize progress by providing a list of major and general requirements personalized for the student. The student can easily see what courses have been taken and what courses are left, and can directly add these courses from the requirements list. The student gets instant feedback after clicking the “add” button when the course appears in their “Upcoming Semester” sidebar and appears in the calendar frame on the right. This set of visualization tools communicates the information in multiple ways so that the student can quickly view the proposed schedule as well as visualize major requirements and time conflicts. By combining these three categories in registration, we give students complete autonomy over their schedule as well as verification that they are on track.
+					</p>
+
+					<p>
+					The “Find Classes” view gives students easy access to the information they need about the offered courses.  Students can search for courses, professors, or acronyms using the search function and get basic information about each course that matches the search query.  The student can then click on a button to view more in-depth information about the offered course.  The student is able to add courses directly from the “Find Classes” page or from the “More Information” page to give multiple routes to achieve the same result.  This means that the system behaves in a way that the user expects, since the repetitive add button means that the student can add a course from whatever view makes the most personal sense.  The “Upcoming Semester” sidebar and the calendar frame of the “Requirements” view are again visible in this “Find Classes” view to provide user feedback and promote consistency across the site (adding to the intuitive nature of the site).
+					</p>
+				</div>
 			</div>
-			<ul>
-				<li>Log in</li>
-				<li>Add a class which is a general requirements</li>
-				<li>Add a class which is a major requirements</li>
-				<li>Add electives that are not your requirements</li>
-				<li>Search for course names or professors</li>
-				<li>Make sure none of your classes conflict</li>
-				<li>Make sure that you have prioritized your classes since you will be automatically registered by the system</li>
-				<li>Check the descriptions of courses you don’t know as much about</li>
-			</ul>
-		</div>
-		<div class="col-md-12">
-			<div class="container">
-				<h1>Questions</h1>
+
+			<div class="row" id="DesignWalkthrough">
+				<h1>Design Walkthrough</h1>
+				<p>
+					The below interaction flow shows a few basic actions using the implemented prototype.  Our <a href="" ng-click="scrollTo('Wireframes')">wireframes</a> and <a href="scrollTo('Sitemap')">sitemap</a> also present useful visualizations of the layout of and logic behind our site.
+				</p>
 			</div>
-			<ul>
-				<li>Who teaches Mechanical Prototyping?</li>
-				<li>How many classes do you have on Monday?</li>
-				<li>What time does Human Factors in Interface Design meet?</li>
-				<li>What major are you (according to the website)?</li>
-				<li>What required courses have you registered for (according to the website)?</li>
-				<li>What is your top priority course (according to the website)?</li>
-			</ul>
-		</div>
-		<div class="col-md-12">
-			<div class="container">
-				<h1>Documentation of Limitations</h1>
+
+			<div class="row" id="ImplementationandDirection"></div>
+
+			<div class="row" id="MajorChanges"></div>
+
+			<div class="row" id="LimitationsandFutureWork"></div>
+
+			<div class="row" id="Insights"></div>
+
+			<hr>
+
+			<div class="row" id="Appendix">
+				<h1>Appendix</h1>
 			</div>
-			<h5>User Data</h5>
-			<ul>
-				<li>The user profile only shows template profile (major and year of graduation)</li>
-				<li>User cannot see what courses they have already taken because we don’t have that data.</li>
-				<li>You cannot actually register using the site.</li>
-			</ul>
-			<h5>Database</h5>
-			<ul>
-				<li>The list of courses is incomplete</li>
-				<li>Data on website is manufactured</li>
-				<li>Prerequisite data is not included</li>
-				<li>Data specific to sections is not always available (for instance, if sections are taught by different professors).</li>
-				<li>This application is not actually connected to the Registrar in any way.</li>
-			</ul>
-			<h5>Search features</h5>
-			<ul>
-				<li>Search query does not autocomplete.</li>
-				<li>Search queries look through all of the course information.</li>
-				<li>Add courses function under course priority sidebar can give unexpected results.</li>
-			</ul>
-			<h5>Styling</h5>
-			<ul>
-				<li>Formatting and GUI are not styled perfectly.</li>
-				<li>Site navigation bar is not affixed to the top of the screen.</li>
-				<li>Site is not completely responsive to changing window sizes.</li>
-				<li>Courses sometimes show up in the same color on the calendar (since we’re currently only pulling from a list of eight colors).</li>
-				<li>Courses on course priority list are not color-coded to match courses in calendar.</li>
-				<li>Courses are not alphabetized in full course list.</li>
-			</ul>
+
+			<hr>
+
+			<div class="row" id="Wireframes"></div>
+			<div class="row" id="Sitemap"></div>
+			<div class="row" id="CognitiveWalkthrough"></div>
+			<div class="row" id="HeuristicEvaluation"></div>
+
+
+			<div class="row" id="Scenarios">
+				<h1>User Scenarios</h1>
+			</div>
+
+			<div class="row" id="">
+				<div class="col-md-12">
+					<div class="">
+						<h1>Instructions</h1>
+					</div>
+					<p>Click <a href="http://cinnamon-course-registration.herokuapp.com/#/login" target="_blank">here</a> to see our design of the Olin College course registration system.</p>
+					<p>Google Chrome is an awesome browser. You should use it. Please use your username. You don’t have to input a password. Assume the following courses are the only ones in the course catalog:</p>
+					<ul>
+						<li>Art of Approximation</li>
+						<li>Dynamics</li>
+						<li>Fundamentals of Machine Shop Operations</li>
+						<li>Human Factors in Interface Design</li>
+						<li>Materials Science</li>
+						<li>Mechanical Design</li>
+						<li>Mechanical Prototyping</li>
+						<li>Principles of Modern Biology</li>
+						<li>Probability and Statistics</li>
+						<li>Responsive Drawing and Visual Thinking</li>
+						<li>Senior Capstone Program in Engineering</li>
+						<li>Thermodynamics</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="">
+						<h1>Tasks</h1>
+					</div>
+					<ul>
+						<li>Log in</li>
+						<li>Add a class which is a general requirements</li>
+						<li>Add a class which is a major requirements</li>
+						<li>Add electives that are not your requirements</li>
+						<li>Search for course names or professors</li>
+						<li>Make sure none of your classes conflict</li>
+						<li>Make sure that you have prioritized your classes since you will be automatically registered by the system</li>
+						<li>Check the descriptions of courses you don’t know as much about</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="">
+						<h1>Questions</h1>
+					</div>
+					<ul>
+						<li>Who teaches Mechanical Prototyping?</li>
+						<li>How many classes do you have on Monday?</li>
+						<li>What time does Human Factors in Interface Design meet?</li>
+						<li>What major are you (according to the website)?</li>
+						<li>What required courses have you registered for (according to the website)?</li>
+						<li>What is your top priority course (according to the website)?</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"
+				<div class="col-md-12">
+					<div class="">
+						<h1>Documentation of Limitations</h1>
+					</div>
+					<h5>User Data</h5>
+					<ul>
+						<li>The user profile only shows template profile (major and year of graduation)</li>
+						<li>User cannot see what courses they have already taken because we don’t have that data.</li>
+						<li>You cannot actually register using the site.</li>
+					</ul>
+					<h5>Database</h5>
+					<ul>
+						<li>The list of courses is incomplete</li>
+						<li>Data on website is manufactured</li>
+						<li>Prerequisite data is not included</li>
+						<li>Data specific to sections is not always available (for instance, if sections are taught by different professors).</li>
+						<li>This application is not actually connected to the Registrar in any way.</li>
+					</ul>
+					<h5>Search features</h5>
+					<ul>
+						<li>Search query does not autocomplete.</li>
+						<li>Search queries look through all of the course information.</li>
+						<li>Add courses function under course priority sidebar can give unexpected results.</li>
+					</ul>
+					<h5>Styling</h5>
+					<ul>
+						<li>Formatting and GUI are not styled perfectly.</li>
+						<li>Site navigation bar is not affixed to the top of the screen.</li>
+						<li>Site is not completely responsive to changing window sizes.</li>
+						<li>Courses sometimes show up in the same color on the calendar (since we’re currently only pulling from a list of eight colors).</li>
+						<li>Courses on course priority list are not color-coded to match courses in calendar.</li>
+						<li>Courses are not alphabetized in full course list.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

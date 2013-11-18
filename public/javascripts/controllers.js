@@ -84,5 +84,14 @@ controllers.controller('workDistributionController', ['$scope', 'WorkDistributio
 }]);
 
 controllers.controller('designRefinementController', ['$scope', function($scope){
+	$scope.headings = ["Design Overview", "Design Walkthrough", 
+	"Implementation and Direction", "Major Changes", 
+	"Limitations and Future Work", "Insights", "Appendix", "Wireframes", "Sitemap", 
+	"Cognitive Walkthrough", "Heuristic Evaluation", "Scenarios"];
+
+	$scope.scrollTo = function(heading){
+		var location = "#" + heading.split(" ").join("");
+		$.scrollTo($(location), 500);
+	}
 
 }])
