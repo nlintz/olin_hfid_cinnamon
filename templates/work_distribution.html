@@ -39,5 +39,14 @@
 			<td>{{activity.sharon}}</td>
 			<td>{{[activity.chaz, activity.jea, activity.nathan, activity.sharon] | sum}}</td>
 		</tr>
+		<tr ng-repeat="activity in designRefinement.sub_deliverables">
+			<td>Design Refinement</td>
+			<td>{{activity.sub_deliverable_title}}</td>
+			<td>{{activity.chaz}}</td>
+			<td>{{activity.jea}}</td>
+			<td>{{activity.nathan}}</td>
+			<td>{{activity.sharon}}</td>
+			<td>{{[activity.chaz, activity.jea, activity.nathan, activity.sharon] | sum}}</td>
+		</tr>
 	</table>
 </div>

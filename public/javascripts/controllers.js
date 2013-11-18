@@ -81,11 +81,11 @@ controllers.controller('workDistributionController', ['$scope', 'WorkDistributio
 	$scope.research = $scope.workDistribution[0];
 	$scope.needsAnalysis = $scope.workDistribution[1];
 	$scope.designDevelopment = $scope.workDistribution[2];
+	$scope.designRefinement = $scope.workDistribution[3];
 }]);
 
 controllers.controller('designRefinementController', ['$scope', function($scope){
-	$scope.headings = ["Design Overview", "Design Walkthrough", 
-	"Implementation and Direction", "Major Changes", 
+	$scope.headings = ["Design Overview", "Design Walkthrough", "Major Changes", 
 	"Limitations and Future Work", "Insights", "Appendix", "Wireframes", "Sitemap", 
 	"Cognitive Walkthrough", "Heuristic Evaluation", "Scenarios"];
 
@@ -93,5 +93,8 @@ controllers.controller('designRefinementController', ['$scope', function($scope)
 		var location = "#" + heading.split(" ").join("");
 		$.scrollTo($(location), 500);
 	}
+
+	$(".fancybox").fancybox();
+
 
 }])

@@ -44,18 +44,436 @@
 			<div class="row" id="DesignWalkthrough">
 				<h1>Design Walkthrough</h1>
 				<p>
-					The below interaction flow shows a few basic actions using the implemented prototype.  Our <a href="" ng-click="scrollTo('Wireframes')">wireframes</a> and <a href="scrollTo('Sitemap')">sitemap</a> also present useful visualizations of the layout of and logic behind our site.
+					The below interaction flow shows a few basic actions using the implemented prototype.  Our <a href="" ng-click="scrollTo('Wireframes')">wireframes</a> and <a href="" ng-click="scrollTo('Sitemap')">sitemap</a> also present useful visualizations of the layout of and logic behind our site.
 				</p>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Login</h2>
+						<p>
+						When a student first logs into the system, they see the  “Requirements” page. The user information is loaded. The basic user profile (name, major, and year of graduation) is shown in the top-left corner, while the user’s current progress on graduation requirements is shown on the general requirements and major requirements panes.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/login.jpeg">
+							<img ng-src="public/images/design_refinement/design_walkthrough/login.jpeg" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/requirements.png">
+
+							<img ng-src="public/images/design_refinement/design_walkthrough/requirements.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+				</div>
+
+<!-- Add Courses -->
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Add Courses</h2>
+						<p>
+						The user clicks the “Requirements” tab in the navigation bar to view a list of required classes, and the view changes to the “Requirements” page. The student can add courses directly from the requirements pane, by clicking the “Add Class” button.
+						</p>
+						<p>
+						Once the “Add Class” button is clicked, the selected course appears both in the course priority list on the left side and in the calendar view on the right. The “Add Class” button is now grayed out. Clicking the “Drop Class” button removes the class. Dropping the class is also possible by clicking the “X” button on the Course Priority list.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/add_course.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/add_course.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/drop_course.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/drop_course.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+				</div>
+
+<!-- Add From Find Courses -->
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Add Class From Courses</h2>
+						<p>
+						When the student searches for a class by clicking on the search bar at the top of the screen and typing in a query, the student is brought to the “Find Classes” page showing search results. 
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/search.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/search.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						The student clicks the “Add Class” button to register for the appropriate class and, if applicable, the appropriate section. 
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/search_and_add.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/search_results.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						The class appears in both the calendar and the “Preferred Courses” sidebar.  The student may drop the class by clicking the “Drop Class” button from this screen.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/search_and_add.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/search_and_add.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+				</div>
+
+<!-- Add From Sidebar -->
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Add Class From The Left Sidebar</h2>
+						<p>
+						The user selects the add class box in the “Course Priority” sidebar on the left and enters a search query.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/empty_sidebar.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/empty_sidebar.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						The first section of the class is added to the “Preferred Courses” sidebar at the bottom and is automatically added to the calendar. “Add class” buttons for courses added this way will be greyed out to reflect the added status.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/add_section_sidebar.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/add_section_sidebar.png" alt="..." class="img-thumbnail image-thumbnail-constrained">
+						</a>
+					</div>
+				</div>
+
+<!-- Add From More Info -->
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Add Class From The Class Information Modal</h2>
+						<p>
+						Students can view more information about a particular course by clicking the “learn more” button for each course.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/more_info.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/more_info.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						It is also possible to add and drop classes from the “More Information” pop-up screen. After adding the course, the user clicks the “X” button to exit and is returned to the previous page in the same state as it was left in.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/more_info_modal.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/more_info_modal.png" alt="..." class="img-thumbnail image-thumbnail-constrained" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						Added courses will be shown in the priority sidebar as well as the calendar. 
+						</p>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/more_info_escape.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/more_info_escape.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+
+<!-- Resolve Conflicts -->
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Resolving Time Conflicts</h2>
+						<p>
+						The user notices a time conflict on the calendar and selects the other section, outlined in the same color
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/resolve_conflict_a.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/resolve_conflict_a.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						The user is switched to the other section and the time conflict is resolved
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/resolve_conflict_b.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/resolve_conflict_b.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+
+<!-- Changing Course Priority -->
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Changing Course priority</h2>
+						<p>
+						The user clicks the arrows next to courses in the “Preferred Courses” sidebar to order courses according to priority, and the course priority is changed. The priority information is used to help users pre-select alternatives to be automatically enrolled in if top-priority courses are filled up.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_priority_a.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/change_priority_a.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/resolve_conflict_b.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/change_priority_b.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						The user is switched to the other section and the time conflict is resolved
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/resolve_conflict_b.png">
+							<img ng-src="public/images/design_refinement/design_walkthrough/resolve_conflict_b.png" alt="..." class="img-thumbnail" width="1200">
+						</a>
+					</div>
+				</div>
+				<br>
+
+				<div class="row">
+					<p>
+					You can visit our implementation <a href="http://cinnamon-course-registration.herokuapp.com/#/login">here</a>.  We recommend that you explore the implementation while referencing <a href="" ng-click="scrollTo('Scenarios')">this page</a> for a list of scenarios, prompts, and limitations of the implementation.
+					</p>
+				</div>
 			</div>
 
-			<div class="row" id="ImplementationandDirection"></div>
+			<div class="row" id="MajorChanges">
+				<h1>Major Changes</h1>
+				<div class="row">
+					<p>
+						Our implemented prototype is a result of improvements and modifications on the paper prototype since the Design Development stage. The implemented prototype (a website) accounts for screen size and software limitations and responds to further user considerations which were not apparent in a paper prototype.
+					</p>
+					<p>
+						The general requirement and major requirement panes on the requirements page were originally conceptualized as two long columns side by side. In the design prototype, however, the requirements are now stacked on top of one another. This was a decision made to deal with the horizontal size constraints of the browser.
+					</p>
+					<p>
+						In this prototype, where the user does not have all requirements listed, the stacked general and major requirements are fine. In the final prototype we may need to revert back to the original design. 
+					</p>
+					<p>
+						Therefore, there exists a trade-off between the two options: the two-long-columns design allows more information to be reported to the users without forcing them to scroll down much, while the stacked design responds to the limitations of the screen itself.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_a_before.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_a_before.png" alt="..." class="img-thumbnail" height="250">
+							<figcaption>Before</figcaption>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_a_after.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_a_after.png" alt="..." class="img-thumbnail" height="250">
+							<figcaption>After</figcaption>
+						</a>
+					</div>
+				</div>
 
-			<div class="row" id="MajorChanges"></div>
+				<br>
+				<div class="row">
+					<p>
+						In the implemented prototype, the user clicks on the “learn more” button instead of just clicking on the course box. The visual cue of the “learn more” button prompts the user that there is more information to be seen and guides the user to the correct action without other instruction. This was a problem that we defined in our <a href="" ng-click="scrollTo('CognitiveWalkthrough')">cognitive walkthrough</a> of the prototype.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_b_before.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_b_before.png" alt="..." class="img-thumbnail" height="250">
+							<figcaption>Before</figcaption>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_b_after.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_b_after.png" alt="..." class="img-thumbnail" height="250">
+							<figcaption>After</figcaption>
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<p>
+						The information displayed in the “More Information” popup is much more condensed due to physical constraints.  We chose to get rid of the picture of the professor since it was providing information that students did not require, while taking up much space. The amount of information that is displayed in this popup is still under discussion. 
+					</p>
+					<p>
+						We also added two other ways to close out of this popup besides just the “X” button in the upper right-hand corner. The user can either press the “Close” button in the lower right-hand corner or click outside of the popup.  These multiple exit routes prevent the users from getting stuck on the “More Information” popup. This was to address a concern that became apparent while we were paper prototyping, since users would enter the “More Information” popup and not be able to find the way out.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_c_before.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_c_before.png" alt="..." class="img-thumbnail" height="250">
+							<figcaption>Before</figcaption>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_c_after.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_c_after.png" alt="..." class="img-thumbnail" height="250">
+							<figcaption>After</figcaption>
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<p>
+						As a response to the Heuristic Evaluation feedback, we have included the “Log Out” button, which previously did not exist in our prototype. This was a crucial flaw in the design where privacy and a sense of closure is key.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<a class="fancybox" rel="group" href="public/images/design_refinement/design_walkthrough/change_c_before.png">
+							<img ng-src="public/images/design_refinement/major_changes/change_d.png" alt="..." class="img-thumbnail" height="250">
+						</a>
+					</div>
+				</div>
 
-			<div class="row" id="LimitationsandFutureWork"></div>
+			</div>
+
+			<div class="row" id="LimitationsandFutureWork">
+				<div class="row">
+					<h1>Limitations and Future Work</h1>
+					<p>
+						Through internal testing, user testing, and a heuristic evaluation, we identified and compiled a list of limitations and feedback that will be addressed in Revision 2 of our website.  Since work has already started on the second revision, concerns that have already been addressed have been marked as such.
+					</p>
+				</div>
+				<div class="row">
+					<h2>Feedback</h2>
+					<h4>Heuristic Evaluation Feedback</h4>
+					<ul>
+						<li>No feedback or closure after courses are submitted for registration</li>
+						<li>No way to leave/log out of the system [NOW ADDRESSED]</li>
+						<li>No error messages when courses conflict, and course conflicts are not extremely visible</li>
+						<li>Bugs/inconsistencies and bad visualization for to classes with multiple sections</li>
+						<li>Bugs related to using the browser back button [NOW ADDRESSED]</li>
+						<li>Course Priority sidebar needs some thought/redesign (information portrayed, styling, connection to calendar)</li>
+						<li>Include course numbers in tagging [NOW ADDRESSED]</li>
+						<li>Put example search terms in the search bar [NOW ADDRESSED]</li>
+						<li>Think about the names for the tabs in the navigation bar and make the navigation bar more visible</li>
+					</ul>
+					<br>
+					<h4>Presentation Feedback</h4>
+					<ul>
+						<li>Explore other visualizations of the Course Priority sidebar</li>
+						<li>Consider how to handle General Engineering majors</li>
+					</ul>
+					<h4>Other Feedback</h4>
+					<ul>
+						<li>Make the search (especially the search from the Course Priority sidebar) intelligent (so that it adds the course that the user is most likely looking for)</li>
+						<li>Alphabetize search results for easy lookup</li>
+						<li>On admin page, connect requirements and all classes so that course information is identical.</li>
+						<li>Make the navigation bar sticky and more visible</li>
+						<li>Plan for the “post-registration” interaction after students get or do not get the classes they wanted</li>
+					</ul>
+					<br>
+
+				</div>
+				<div class="row">
+					<h2>Limitations</h2>
+					<h4>UserData</h4>
+					<ul>
+						<li>The user profile only shows the template profile (major and year of graduation).</li>
+						<li>User cannot see what courses they have already taken because we don’t have that data.</li>
+						<li>You cannot actually register using the site.</li>
+					</ul>
+					<h4>Database</h4>
+					<ul>
+						<li>The list of courses is incomplete.</li>
+						<li>Data on website is based on Olin class data but somewhat manufactured.</li>
+						<li>Prerequisite data is not included.</li>
+						<li>Data specific to sections is not always available (for instance, if sections are taught by different professors).</li>
+						<li>The user cannot sign up for different sections of the same class (which becomes an issue when ordering courses according to priority).</li>
+						<li>This application is not connected to the Olin Registrar in any way.</li>
+					</ul>
+					<h4>Searching</h4>
+					<ul>
+						<li>Search query does not autocomplete.</li>
+						<li>“Add Class” function under course priority sidebar can give unexpected results.</li>
+					</ul>
+					<h4>Styling</h4>
+					<ul>
+						<li>Formatting and GUI are not styled perfectly.</li>
+						<li>Site navigation bar is not affixed to the top of the screen.</li>
+						<li>Site is not completely responsive to changing window sizes.</li>
+						<li>Courses are not alphabetized in full course list.</li>
+					</ul>
+				</div>
+			</div>
 
 			<div class="row" id="Insights"></div>
-
+				<h1>Insights</h1>
+				<p>We have learned a few key things throughout this phase of the project.  We abstracted these to a heuristic followed by an explanation of the heuristic.
+				</p>
+				<br>
+				<p><em>Keep in mind time constraints.</em> Software functionality takes time to implement, so it is important to decide early what should be fully implemented and what can be downsized. We had a number of features that were either not fully operational or not implemented because of time constraints. For example, we wanted our search to behave a lot like Google instant, but we didn’t have the time to implement that interaction.
+				</p>
+				<p><em>Plan around physical constraints.</em> The size of a normal screen puts a limit on how much information an interface can contain. For example, we wanted to have multiple requirement columns for better visualization but needed to cut that functionality due to screen size limitations.</p>
+				<p><em>Test early and often.</em> Some of our best insights came from having peers or potential users test our system, especially about things that we didn’t design for. We have included a number of these in our modifications for Revision 2 and included the rest in the limitations section.</p>
+				<p><em>Consider different affordances between paper and electronic mediums.</em> When we paper prototyped, many users noticed things immediately that were less obvious on an electronic medium. For example, they knew to click the bordered sections to change sections in the calendar on the paper prototype but missed it in the electronic medium. This is because web sites afford clicking through explicit labels or buttons whereas paper prototypes have less explicit affordances opening up users to explore more interactions. We believe that by following the design patterns from the web in paper prototyping, user feedback will be more natural and reflect how people will actually interact with your site.</p>
+				<p><em>Focus on the main design and worry about edge cases after.</em> We should spend the majority of the time during implementation making the parts of the site that all users will see on a regular basis. While edge cases are important to consider, they will not make or break a design, so first priority should be given to the design of the main site.  Even while keeping this in mind, it was difficult for us to not get wrapped up in edge cases, especially when we first came across them.</p>
+				<p><em>Aesthetics are not completely separable from usability.</em> Initially we had only focused on implementing features such as the business logic which powers the calendar widget. However, we de-prioritized styling and aesthetics when developing this widget which made it look strange and out of place on the site. By adding some simple colors and rounded edges, we made the calendar fit within the general design of the site and made it much simpler to understand. Therefore, focusing on aesthetics can actually make a feature more usable especially when the widget is trying to convey a complex idea like resolving conflicting course times.</p>
 			<hr>
 
 			<div class="row" id="Appendix">
@@ -64,10 +482,20 @@
 
 			<hr>
 
-			<div class="row" id="Wireframes"></div>
-			<div class="row" id="Sitemap"></div>
-			<div class="row" id="CognitiveWalkthrough"></div>
-			<div class="row" id="HeuristicEvaluation"></div>
+			<div class="row" id="Wireframes">
+				<ng-include src=" 'partials/wireframe.html' "></ng-include>
+			</div>
+			<div class="row" id="Sitemap">
+				<ng-include src=" 'partials/sitemap.html' "></ng-include>
+			</div>
+			<div class="row" id="CognitiveWalkthrough">
+				<h1>Cognitive Walkthrough</h1>
+				<p>Click <a href="public/pdfs/CognitiveWalkthrough.pdf">here</a> to view our cognitive walkthrough</p>
+			</div>
+			<div class="row" id="HeuristicEvaluation">
+				<h1>Heuristic Evaluation</h1>
+				<p>Click <a href="public/pdfs/CinnamonGroupEvaluation.pdf">here</a> to view our heuristic evaluation.</p>
+			</div>
 
 
 			<div class="row" id="Scenarios">

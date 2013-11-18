@@ -124,5 +124,51 @@
 		"sharon": "20"
 		}
 	]
+	},
+	{"deliverable_title": "Design Refinement",
+	"sub_deliverables": [
+		{"sub_deliverable_title": "Implemented Prototype",
+		"chaz": "10",
+		"jea": "5",
+		"nathan": "80",
+		"sharon": "5"
+		},
+		{"sub_deliverable_title": "Interaction Flow",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Sitemap",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Wireframes",
+		"chaz": "20",
+		"jea": "20",
+		"nathan": "20",
+		"sharon": "40"
+		},
+		{"sub_deliverable_title": "Presentation",
+		"chaz": "10",
+		"jea": "40",
+		"nathan": "10",
+		"sharon": "40"
+		},
+		{"sub_deliverable_title": "Refinement Report",
+		"chaz": "30",
+		"jea": "30",
+		"nathan": "10",
+		"sharon": "30"
+		},
+		{"sub_deliverable_title": "Cognitive Walkthrough",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		}
+	]
 	}
 ]
