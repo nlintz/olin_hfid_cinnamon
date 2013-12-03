@@ -22,5 +22,7 @@ angular.module('teamCinnamon', ['ngSanitize', 'teamCinnamon.controllers', 'teamC
 			{templateUrl: 'templates/interaction_flows.html'}).
 		  when('/wireframes_sitemap',
 		  	{templateUrl: 'templates/wireframes_sitemap.html', controller: 'wireframeSitemapController'}).
+		  when('/final_refinement',
+		  	{templateUrl: 'templates/final_refinement.html', controller: 'finalRefinementController'}).
 		  otherwise({redirectTo: '/home'});
 }]);
