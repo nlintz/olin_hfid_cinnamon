@@ -98,7 +98,7 @@ controllers.controller('designRefinementController', ['$scope', function($scope)
 }]);
 
 controllers.controller('finalRefinementController', ['$scope', function($scope){
-	$scope.headings = ["Usability Study Protocol", "Design Changes"];
+	$scope.headings = ["Usability Study Report", "Design Changes", "Appendix", "Usability Study Protocol Rev 2", "Usability Study Protocol Rev 1"];
 
 	$scope.scrollTo = function(heading){
 		var location = "#" + heading.split(" ").join("");

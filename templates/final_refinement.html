@@ -13,74 +13,131 @@
 			</div>
 		</div>
 		<div class="col-md-9 col-sm-12 col-xs-12">
-			<div class="row" id="UsabilityStudyProtocol">
+			<div class="row" id="UsabilityStudyReport">
 				<div class="col-md-12">
-					<h2>Usability Study Protocol</h2>
+					<h2>Usability Study Report</h2>
 					<br>
-					<p><strong>Background Context:</strong></p>
-					<p>
-						Our users have requested a confirmation when the registration process is complete. Our original website had no submission of a course list or confirmation when the user was “finished” registering. This is represented in Case C (a control). We have added two types of submit buttons to provide confirmation for our users. Case B is to show users a simple message upon pressing the “submit” button that the registration process will be automatically completed according to their chosen preferences and that the user can always change his or her course priority list before the due date. Case A shows users a list of courses containing the most plausible schedule of the upcoming semester. The message about automatic registration is also provided.
-					</p>
+					<p><strong>General Overview:</strong></p>
 					<br>
 					<p>
-						Case A is providing more information as compared to Case B. While this increases the visibility of the system state and boosts the confidence of our users, we are concerned that too much information ultimately may not lead to satisfaction. For example, the actual message that “registration is complete” may be hard to find due to the large amount of information. This will increase the time that users stay on the interface, which we expect to leave users frustrated and dissatisfied. We would like to see if this concern of user dissatisfaction is negligible compared to the confidence gained from additional information.
+						Our goal during this test was to determine how much confirmation our users want at the end of the registration process. In the current registration system, the user simply enters the courses that they want and closes the web browser when they are happy with the schedule. We had an interface which followed this same thought process, but received feedback during our Heuristic Evaluation that said that users wanted a confirmation due to the automatic registration we had implemented. As such, we decided to test two different types of submit buttons against a control, an interface with no button.
 					</p>
 					<br>
-					<p><strong>Hypothesis:</strong></p>
 					<p>
-						We expect that the existence of a submit button (Case B below) will provide a more satisfying experience for the user than no submit button (Case C below). Furthermore, we expect the user’s confidence in the system to increase with the existence of the submit button. We expect that providing more information when the submit button is clicked (Case A below) will lead to increased confidence in the system but decreased satisfaction as compared to Case B due to the increase in time necessary for completion.
+						In Case A, there is a submit button in the lower left-hand corner of the screen, underneath the Course Priority sidebar. Once clicked, this submit button brings up a popup showing the ideal schedule (which is the first four courses on the Course Priority sidebar). In Case B, the submit button is in the same location on the screen but once clicked, shows a text box confirming that the schedule is submitted and notifying the user that they will be automatically registered at the specified time.  Case C is the control, with no button.
 					</p>
 					<br>
-					<p><strong>Ideal Testing Conditions:</strong></p>
 					<p>
-						We would take our user base, then randomly distribute them into three subgroups of users. We would present each subgroup with one of our interfaces (A, B, or C), which they would individually complete. We would watch each person register and ask the questions outlined above.
+						From our testing, we have determined that the submit button leading to a popup with a course list (Case A) is the best option. Our users were both most satisfied with this interface and most confident that the system knew what they wanted while using this option. They commented that the popup with a greyed out screen made it very obvious what was happening and also clarified that they were at the end stage of the registration process. They also said that a bulleted list of courses was quick and easy to read and thought that this was valuable information to have. Furthermore, during informal testing we have determined that the submit button should be above the actual list of courses so that it does not get lost when the user adds a large number of classes to the Course Priority list.
+					</p>
+
+					<br>
+					<p><strong>Results:</strong></p>
+					<br>
+					<p>
+						We asked each of our users to rank the three confirmation options, where 1 is their favorite and 3 is their least favorite. Data is provided in the tables below.
 					</p>
 					<br>
-					<p><strong>Independent Variables:</strong></p>
 					<p>
-						The only factor that we will vary is the type of confirmation message that the user receives when he or she is finished registering.
+						How confident are you that the system will represent your best interests?
 					</p>
+						<table class="table-striped table">
+							<tr>
+								<td><b>Case</b></td>
+								<td><b>Tester A</b></td>
+								<td><b>Tester B</b></td>
+								<td><b>Tester C</b></td>
+							</tr>
+							<tr>
+								<td>Case A (button + popup course list</td>
+								<td>2: worse because it says you can still edit</td>
+								<td>1: tells you what your courses are again</td>
+								<td>1: the fact that a button exists helps</td>
+							</tr>
+							<tr>
+								<td>Case B (button + message)</td>
+								<td>1: as confident as current system</td>
+								<td>2: information is in two different places that in Case A was presented together</td>
+								<td>2: I don’t like that it tells me I can change the list of courses again.</td>
+							</tr>
+							<tr>
+								<td>Case C (no button)</td>
+								<td>3: feels up in the air</td>
+								<td>3: confused because no way to submit (and prompted to submit to registrar)</td>
+								<td>3: confused because no way to submit (and prompted to submit to registrar)</td>
+							</tr>
+						</table>
+					<br>
 					<p>
-						There are three cases will be tested:
-						<ul>
-							<li>A- submit button that shows a popup course list</li>
-							<li>B- submit button that shows simple confirmation message</li>
-							<li>C- no submit button (control)</li>
-						</ul>
+						How satisfied are you with the interface?
 					</p>
+						<table class="table-striped table">
+							<tr>
+								<td><b>Case</b></td>
+								<td><b>Tester A</b></td>
+								<td><b>Tester B</b></td>
+								<td><b>Tester C</b></td>
+							</tr>
+							<tr>
+								<td>Case A (button + popup course list</td>
+								<td>2: less satisfied because the “tentative” list made it seem like she wasn’t finished yet</td>
+								<td>1: information is a block of text - bullets are quicker and easier to read, most satisfied</td>
+								<td>1: I like the button because it confirms that I’m done.</td>
+							</tr>
+							<tr>
+								<td>Case B (button + message)</td>
+								<td>1: more satisfied than others but still thought the submit button was hard to find</td>
+								<td>2: likes the confirmation but dislikes the presentation of information</td>
+								<td>2: I don’t like that it tells me I can continue to change my courses</td>
+							</tr>
+							<tr>
+								<td>Case C (no button)</td>
+								<td>3: not satisfied because no confirmation</td>
+								<td>3: confused because was prompted for submission but no submit button</td>
+								<td>3: confused because was prompted for submission but no submit button</td>
+							</tr>
+						</table>
+					<br>
+					<p><strong>Interpretation:</strong></p>
+					<br>
 					<p>
-						Case A provides the largest amount of information, while Case C, the control, provides the least amount of information.
+						The no button option was unanimously criticized by the users, and it seems necessary to have a button for a sense of closure. This result is unlikely to change even if the interface were tested with more people. The users may have been biased towards having a button due to the wording of one question; we asked “how would you tell the registrar that you have chosen these particular courses?” The choice without a button obviously left the users confused. A better choice of a control would be a button that does not show any messages.
 					</p>
 					<br>
-					<p><strong>Dependent Variables:</strong></p>
 					<p>
-						There are three dependant variables:
-						<ol>
-							<li>Time spent confirming</li>
-							<li>Satisfaction with interface</li>
-							<li>Satisfaction with interface</li>
-						</ol>
-					</p>
-					<p>
-						The amount of information in the message is measured by the time the user spends confirming the courses selected.Time will be measured unbeknownst the testers, from when the tester finished making the list of courses to when the tester says that he/she says the registration is complete.
-					</p>
-					<p>
-						Then the tester will be asked to rank the satisfaction and confidence with the interface on a scale of 1 - 3 (where 1 is least satisfied and 3 is most satisfied) using the following questions:
-						<ul>
-							<li>How satisfied are you with the system?</li>
-							<li>How confident are you that the system will represent your best interests?</li>
-						</ul>
-					</p>
-					<p>
-						Tester will be asked a final open-ended question about his or her emotions throughout the registration process.
+						Regarding Cases A and B, it was interesting to see the reasons that our testers cited for their preference of one case over another. The reason why one tester prefered Case B over Case A was the same as why another user prefered Case A over Case B: the fact that the message says that “users may change the list of courses prior to the deadline.” This message appears on both Cases A and B;  however, the same message was interpreted differently by the two testers. One interpreted the message as support for course changes in the future (and therefore a comforting message), whereas the other interpreted the message as leaving the schedule up in the air. This was a good example that showed a large portion of user data depends on chance, and a large and well-represented user group may prove more useful to these experiments.
 					</p>
 					<br>
-					<p><strong>If our hypothesis is correct, what pattern would you expect to observe in the response variables?</strong></p>
 					<p>
-						We expect people testing the interface without a “submit” button to be confused when they are “finished registering” since there is no indication that the user has completed the registration process. We think that if provided with a submit button for closure and validation at the end of registration, users will feel more comfortable with their automatic registration later (since they know they have provided all of the information that the system needs). We think that a list of courses will provide helpful information to some users but will take more time to read and understand than what the user wants.  Therefore, we expect the time spent confirming to go from no time (no submit button, Case C) to little time (pressing the submit button and getting a text confirmation, Case B) to a significant amount of time (using the popup course list to see the possible schedule, Case A). We expect confidence to be maximized with the popup course list (Case A) and satisfaction to be maximized with the submit button with a text confirmation (Case B).
+						Our original hypothesis was that the levels of satisfaction will be different from the confidence that users gain, since an excessive amount of information may clutter the design and frustrate the users. However, the amount of information shown by pressing the submit button was simply not large enough to show such an effect. The increased information in Case A led to more confidence which made users more satisfied as compared to Case B.
 					</p>
+					<br>
+					<p><strong>Next Steps:</strong></p>
+					<br>
+					<p>
+						We will be implementing Case A in our final prototype. Case A was preferred over Case B by our users, and seemed to provide more of a sense of confirmation that the schedule was finalized. Case A shows both the message that “users may change the list of courses prior to the deadline” as well as the most likely list of courses, which together provides more of an overview.
+					</p>
+					<br>
+					<p>
+						We will also be moving the submit button from underneath the course priority list to above it (to make it more obvious). Currently, when users register for more than five courses, the submit button will not be seen on the screen unless the user scrolls down. We will correct this by putting the submit button at the top of the Course Priority sidebar, where it will not move no matter how many courses are added by the user.
+					</p>
+					<br>
+					<p>
+						We also plan to address some of the bugs/features (as time allows) that our users identified during this testing:
+					</p>
+					<br>
+					<ul>
+						<li>On the calendar, if two courses could conflict but the user has selected sections which do not conflict, the course conflict error message should not appear.</li>
+						<li>An animation should be added for when the user adds a class. It should draw attention to the change in the calendar since users might otherwise miss that a course was added to their calendar.</li>
+						<li>An animation should be added when a section switches because it is jarring to see colors changing so rapidly when a user has changed sections.</li>
+						<li>Users should be able to choose their own coloring scheme for classes in the calendar and the left sidebar.</li>
+						<li>Users should be able to hide the calendar to provide more screen real estate for other content in the views.</li>
+						<li>Courses should display what their prerequisites are and the user should be notified if they sign up for a class that they are missing the prerequisites for.</li>
+					</ul>
+					<br>
 				</div>
 			</div>
+
 			<div class="row" id="DesignChanges">
 				<div class="col-md-12">
 					<h2>Design Changes</h2>
@@ -172,6 +229,136 @@
 						</div>
 					</div>
 					<br>
+				</div>
+			</div>
+			<div class="row" id="Appendix">
+				<div class="col-md-12">
+					<hr>
+					<h2>Appendix</h2>
+					<hr>
+				</div>
+			</div>
+			<div class="row" id="UsabilityStudyProtocolRev2">
+				<div class="col-md-12">
+					<h2>Usability Study Protocol Rev 2</h2>
+					<br>
+					<p><strong>Hypothesis:</strong></p>
+					<p>
+						We expect that the existence of a submit button (Case B below) will provide a more satisfying experience for the user than no submit button (Case C below). Furthermore, we expect the user’s confidence in the system to increase with the existence of the submit button. We expect that providing more information when the submit button is clicked (Case A below) will lead to increased confidence in the system but decreased satisfaction as compared to Case B due to the increase in time necessary for completion.
+					</p>
+					<br>
+					<p><strong>Ideal Testing Conditions:</strong></p>
+					<p>
+						We would take our user base, then randomly distribute them into three subgroups of users. We would present each subgroup with one of our interfaces (A, B, or C), which they would individually complete. We would watch each person register and ask the questions outlined above.
+					</p>
+					<br>
+					<p><strong>Independent Variables:</strong></p>
+					<p>
+						The only factor that we will vary is the type of confirmation message that the user receives when he or she is finished registering.
+					</p>
+					<p>
+						There are three cases will be tested:
+						<ul>
+							<li>A- submit button that shows a popup course list</li>
+							<li>B- submit button that shows simple confirmation message</li>
+							<li>C- no submit button (control)</li>
+						</ul>
+					</p>
+					<p>
+						Case A provides the largest amount of information, while Case C, the control, provides the least amount of information.
+					</p>
+					<br>
+					<p><strong>Dependent Variables:</strong></p>
+					<p>
+						There are two dependant variables:
+						<ol>
+							<li>Confidence with the interface</li>
+							<li>Satisfaction with interface</li>
+						</ol>
+					</p>
+					<p>
+						The tester will be asked to rank the satisfaction and confidence with the three interfaces. A rank of 1 indicates the most satisfied and 3 is least satisfied. We asked the following questions:
+						<ul>
+							<li>How satisfied are you with the system?</li>
+							<li>How confident are you that the system will represent your best interests?</li>
+						</ul>
+					</p>
+					<p>
+						Tester will be asked a final open-ended question about his or her emotions throughout the registration process.
+					</p>
+					<br>
+					<p><strong>If our hypothesis is correct, what pattern would you expect to observe in the response variables?</strong></p>
+					<p>
+						We expect people testing the interface without a “submit” button to be confused when they are “finished registering” since there is no indication that the user has completed the registration process. We think that if provided with a submit button for closure and validation at the end of registration, users will feel more comfortable with their automatic registration later (since they know they have provided all of the information that the system needs). We think that a list of courses will provide helpful information to some users but will take more time to read and understand than what the user wants. Therefore, we expect confidence increase from Case C (no submit button), to Case B (pressing the submit button and getting a text confirmation), and to Case A (using the popup course list to see the possible schedule). We expect satisfaction to be maximized with the submit button with Case B (text confirmation), because Case A provides too much information, cluttering the interface.
+					</p>
+				</div>
+			</div>			
+			<div class="row" id="UsabilityStudyProtocolRev1">
+				<div class="col-md-12">
+					<h2>Usability Study Protocol Rev 1</h2>
+					<br>
+					<p><strong>Background Context:</strong></p>
+					<p>
+						Our users have requested a confirmation when the registration process is complete. Our original website had no submission of a course list or confirmation when the user was “finished” registering. This is represented in Case C (a control). We have added two types of submit buttons to provide confirmation for our users. Case B is to show users a simple message upon pressing the “submit” button that the registration process will be automatically completed according to their chosen preferences and that the user can always change his or her course priority list before the due date. Case A shows users a list of courses containing the most plausible schedule of the upcoming semester. The message about automatic registration is also provided.
+					</p>
+					<br>
+					<p>
+						Case A is providing more information as compared to Case B. While this increases the visibility of the system state and boosts the confidence of our users, we are concerned that too much information ultimately may not lead to satisfaction. For example, the actual message that “registration is complete” may be hard to find due to the large amount of information. This will increase the time that users stay on the interface, which we expect to leave users frustrated and dissatisfied. We would like to see if this concern of user dissatisfaction is negligible compared to the confidence gained from additional information.
+					</p>
+					<br>
+					<p><strong>Hypothesis:</strong></p>
+					<p>
+						We expect that the existence of a submit button (Case B below) will provide a more satisfying experience for the user than no submit button (Case C below). Furthermore, we expect the user’s confidence in the system to increase with the existence of the submit button. We expect that providing more information when the submit button is clicked (Case A below) will lead to increased confidence in the system but decreased satisfaction as compared to Case B due to the increase in time necessary for completion.
+					</p>
+					<br>
+					<p><strong>Ideal Testing Conditions:</strong></p>
+					<p>
+						We would take our user base, then randomly distribute them into three subgroups of users. We would present each subgroup with one of our interfaces (A, B, or C), which they would individually complete. We would watch each person register and ask the questions outlined above.
+					</p>
+					<br>
+					<p><strong>Independent Variables:</strong></p>
+					<p>
+						The only factor that we will vary is the type of confirmation message that the user receives when he or she is finished registering.
+					</p>
+					<p>
+						There are three cases will be tested:
+						<ul>
+							<li>A- submit button that shows a popup course list</li>
+							<li>B- submit button that shows simple confirmation message</li>
+							<li>C- no submit button (control)</li>
+						</ul>
+					</p>
+					<p>
+						Case A provides the largest amount of information, while Case C, the control, provides the least amount of information.
+					</p>
+					<br>
+					<p><strong>Dependent Variables:</strong></p>
+					<p>
+						There are three dependant variables:
+						<ol>
+							<li>Time spent confirming</li>
+							<li>Satisfaction with interface</li>
+							<li>Satisfaction with interface</li>
+						</ol>
+					</p>
+					<p>
+						The amount of information in the message is measured by the time the user spends confirming the courses selected.Time will be measured unbeknownst the testers, from when the tester finished making the list of courses to when the tester says that he/she says the registration is complete.
+					</p>
+					<p>
+						Then the tester will be asked to rank the satisfaction and confidence with the interface on a scale of 1 - 3 (where 1 is least satisfied and 3 is most satisfied) using the following questions:
+						<ul>
+							<li>How satisfied are you with the system?</li>
+							<li>How confident are you that the system will represent your best interests?</li>
+						</ul>
+					</p>
+					<p>
+						Tester will be asked a final open-ended question about his or her emotions throughout the registration process.
+					</p>
+					<br>
+					<p><strong>If our hypothesis is correct, what pattern would you expect to observe in the response variables?</strong></p>
+					<p>
+						We expect people testing the interface without a “submit” button to be confused when they are “finished registering” since there is no indication that the user has completed the registration process. We think that if provided with a submit button for closure and validation at the end of registration, users will feel more comfortable with their automatic registration later (since they know they have provided all of the information that the system needs). We think that a list of courses will provide helpful information to some users but will take more time to read and understand than what the user wants.  Therefore, we expect the time spent confirming to go from no time (no submit button, Case C) to little time (pressing the submit button and getting a text confirmation, Case B) to a significant amount of time (using the popup course list to see the possible schedule, Case A). We expect confidence to be maximized with the popup course list (Case A) and satisfaction to be maximized with the submit button with a text confirmation (Case B).
+					</p>
 				</div>
 			</div>
 		</div>
