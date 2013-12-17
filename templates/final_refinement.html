@@ -13,6 +13,178 @@
 			</div>
 		</div>
 		<div class="col-md-9 col-sm-12 col-xs-12">
+			<div class="row" id="FinalReport">
+				<div class="col-md-12">
+					<hr>
+					<h2>Final Report</h2>
+					<hr>
+					<br>
+					<p><strong>The Problem Space</strong></p>
+					<p>
+						Course registration at Olin College is required for all students each and every semester, yet the overall experience is very stressful. There is inherent stress in the dichotomy of requirements and electives - students want to take interesting and stimulating courses but also want to be on track to graduate. The current registration system, the Olin Portal, only adds to the stress of registration due to its numerous usability traps, such as poor mapping of actions, error intolerance, and lack of feedback from the system. 
+					</p>
+					<p>
+						For this project, we have designed a new interface that takes into account the needs of the students and other stakeholders with the overall goal of reducing the stress associated with the registration process. Our goal is to help Olin students in a way such that when they think of registration, they will think of the enjoyment of choosing courses rather than how unnecessarily difficult the process is. We give students more control over their academic careers through a well-designed interface.
+					</p>
+					<p><strong>Major Needs</strong></p>
+					<p>From our user interviews, we have identified a three major user needs regarding registration:</p>
+					<ul>
+						<li><em>Simple.</em> The interface should be simple and intuitive. It needs to borrow heavily from methods that students already use to choose courses and register. There should not be any other extraneous functions outside of what is necessary, and the necessary functions should be quickly and easily understood.</li>
+						<li><em>Responsive.</em> Students need a visual and responsive system that gives constant feedback. An interface that reassures the user throughout the registration process by is very helpful. Even when the user uses the interface in an unexpected way, the interface should respond. Furthermore, students need a strong sense of confirmation before feeling truly done with the registration process.</li>
+						<li><em>Accessible.</em> The registration system must allow users to access and visualize course information in multiple ways. Students need information regarding graduation and major requirements and course offering times in order to decide which courses to take the following semester. The interface also needs to be open to various kinds of input from users so that any user can reliably use the interface to complete registrations.</li>
+					</ul>
+					<p>Each of the features in our interface satisfies one or more of these needs.</p>
+					<br>
+					<p><strong></strong>Personas</p>
+					<p>We have identified the following three personas:</p>
+					<ul>
+						<li>Francis the Follower: Francis’s main motivation is to graduate with a traditional engineering degree. He does not plan extensively since he follows the path that has been tried and proven by his peers. Since he rarely needs to get into extremely competitive classes, he looks at the registration process as a necessary evil and tries to finish registering as quickly as possible. He tends to focus on taking graduation requirements instead of interesting courses. This registration system is designed for Francis, since he is likely to not use the system often and thus get more easily frustrated.</li>
+						<li>Sara the Super Planer: Sara aims to achieve academic success as well as gain personal satisfaction from learning. She plans extensively in order to take the classes that she wants while still staying on track to graduate. She is looking for a visual registration system that helps her to plan and lets her collaborate with peers. Sara, as a pro user, knows all of the ins and outs of the system and can take full advantage of the features provided to her.</li>
+						<li>Trail Blazing Tyler: Tyler focuses on flexibility and having fun in the courses he takes. He designs his own unique education, and is motivated almost entirely intrinsically. He prioritizes taking interesting courses over requirements and rarely plans for future semesters. Tyler is looking for a registration system that supports the autonomy he so desires and flexibly handles all of his electives.</li>
+					</ul>
+					<p>
+						Each of our three personas has additional priorities that needed to be taken into account for our design. How we address their specific needs will be discussed throughout the design feature sections below. 
+					</p>
+					<br>
+					<p><strong>The Cinnamon Course Registration App</strong></p>
+					<p>There are six major features in our system:</p>
+					<ul>
+						<li>Graduation Requirements tab</li>
+						<li>Course Offerings tab</li>
+						<li>Calendar sidebar</li>
+						<li>Course Priority sidebar</li>
+						<li>Search bar</li>
+						<li>More Information</li>
+					</ul>
+					<p>For each of the features, we will give a brief description of how it works, what need it addresses, which personas it helps, what important decisions we made based on user feedback, and what future work can be done.</p>
+					<br>
+					<p><strong>Graduation Requirements</strong></p>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="fancybox" rel="group" href="public/images/final_refinement/RequirementsPage.png">
+								<img ng-src="public/images/final_refinement/RequirementsPage.png" alt="..." class="img-thumbnail">
+							</a>
+						</div>
+					</div>
+					<p>The Graduation Requirements tab is the first tab that the user sees when he or she logs into the website. The purpose of this tab is twofold - to show users a defined path toward graduation and to facilitate planning for requirements in the future. The requirements on this tab are split into two sections: general requirements and major requirements. General requirements are the same for all students at Olin, while major requirements are based on the information about major as provided by the registrar.
+					</p>
+					<p>The Graduation Requirements tab fulfills our users’ needs of simplicity and accessibility. The tab is very intuitive - it uses language familiar to our users and lays out the requirements in a simple and easy-to-follow way. This tab also provides quick and easy access to the requirements needed to graduate, which is information that a lot of our users need. The More Information popup to learn more about a class can also be accessed from this tab which is another source of information for our users.
+					</p>
+					<p>This tab is most helpful for two of our users - Francis the Follower and Sara the Super Planner. Francis, who is looking for fast registration of required classes, can exclusively register from this tab. The information on this tab also means that he can glance through this tab to figure out what he has to take, allowing for recognition rather than recall and improving usability. Sara, on the other hand, uses the Graduation Requirements tab in a very different way - primarily as a planning tool. From this tab, she can see what requirements she has already taken and how many she has left to take before she graduates. This helps her ensure that she is on track by communicating it in a very visual way.
+					</p>
+					<p>Many users want a feature that makes it easy to see their progress in fulfilling their major requirements. During our user interviews, we met some users who frequent the Degree Audit menu of sis.olin.edu because it provides all of the information needed to see their progress toward graduation. However, the Degree Audit is difficult to read so the equivalent feature in our registration system was designed to make viewing progress as simple as possible. For example, in our website, the user can see all of the classes that fit into their major and see how many they have already taken. In addition, the feature to add classes was included in the Graduation Requirements interface so that users who want to mostly take required classes can register quicker and easier. Finally, the add buttons on the major requirements page shows the class name but not the sections. This simplifies the user experience since users will focus on taking the necessary classes to graduate without being distracted by the decision on a section to take.
+					</p>
+					<p>The one limitation of the two tab interface - Graduation Requirements and Course Offerings - is that on some occasions our users don’t find the Course Offerings tab. We found during paper prototyping users need faster access to the requirements information than the full course listing, so we made the decision to start on the Graduation Requirements tab. Given more time, we would conduct more user tests to make sure that this is the decision which is most in line with our identified need of accessibility.
+					</p>
+					<p><strong>Course Offerings</strong></p>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="fancybox" rel="group" href="public/images/final_refinement/CourseOfferings.png">
+								<img ng-src="public/images/final_refinement/RequirementsPage.png" alt="..." class="img-thumbnail">
+							</a>
+						</div>
+					</div>
+					<p>The Course Offerings tab is intended to act as a search tab for our users. It can be accessed by either inputting a query into the search bar at the top of the screen or by clicking the Course Offerings tab in the navigation bar. This tab shows a list of courses that are relevant to the search performed or a list of all courses if the tab is entered by clicking the course offerings tab in the top navigation. For each of the courses listed, the tab provides information such as the name of the instructor, time offered, number of sections, and number of students enlisted. There is also a “learn more” button that shows more details such as the description of the course, and the search tags that are relevant to the course. Similarly to the Graduation Requirements tab, the user can also add/drop classes and change sections in this tab by clicking the respective buttons.
+					</p>
+					<p>
+						The Course Offerings tab is focused on addressing the need of an interface that allows access to information from many points. While the Course Priority list and the Calendar menu provide visual information about the number of sections and times offered, they do not contain all information that students need. The Course Offerings tab shows the information that is not immediately needed for quick registration, but is important when preparing the list of courses for next semester. Therefore, this tab helps the Sara the Super Planner most directly, because we provide crucial information for course planning. However, it eventually helps all of our personas since at some point everyone needs additional information about classes that are not major or graduation requirements. Hiding the least important information such as course description and search tag somewhat aids Francis the Follower’s need for swift registration.
+					</p>
+					<p>
+						We made two major decisions regarding the Course Offerings tab using our paper prototype. The first was to set up this tab as a tile view, and not as a list view. We found that this tiled view gave our users access to more information and made the system more visible. We used the paper prototype to find out what information our users needed most about courses. All information would be displayed in the More Information popup, but enough basic information needed to be displayed in this “tile list” of courses to let the user choose which courses to find out more about. We decided that the most important information was the course name, the professor who teaches it, the section information, the current enrollment, and the first few lines of the course description. The rest of the information can be provided once the “learn more” button is clicked.
+					</p>
+					<p>
+						One thing that we did not have time to address was the layout of the box that represents each course. We would like to spend more time testing different layouts of this information to make it more accessible. Also, as mentioned in the Graduation Requirements section, we need to spend more time thinking about how to make sure our users see this second tab. We have partially addressed this problem by having a query from the search bar automatically redirect users to this tab, but we would like to figure out how to make it even more obvious where in the system the user is. This would add to the intuitive nature of our site, which is one of the core needs we are trying to address.
+					</p>
+					<p><strong>Calendar Sidebar</strong></p>
+					<div class="row">
+						<div class="col-md-5">
+							<a class="fancybox" rel="group" href="public/images/final_refinement/CalendarSidebar.png">
+								<img ng-src="public/images/final_refinement/CalendarSidebar.png" alt="..." class="img-thumbnail">
+							</a>
+						</div>
+					</div>
+					<br>
+					<p>The Calendar sidebar provides a strong visual reference to help users see which classes occur during the same time blocks. If a user adds a class that conflicts with another class already added, a notification appears telling the user that they signed up for two classes which meet at the same time. From the Calendar, a user can change which sections of a class they are in, making time conflict resolution a simple and intuitive process.
+					</p>
+					<p>The Calendar feature fulfills the three major needs of simplicity, accessibility, and responsiveness. During user interviews, many people talked about using tools like HALP or Outlook to plan their classes. Trying to remember the times for different classes is too hard for most users so they turn to other tools to visualize what classes they can take together. Many people praised the calendar features in HALP and Outlook since they are simple, intuitive, and visual. Therefore, it makes sense to build this feature into the course registration interface since our users are already accustomed to it. The Calendar sidebar also satisfies the need of accessibility since it provides another way to change class sections while looking at the user’s schedule. In the current system, if a user registers for two classes that meet at the same time, he or she needs to go back and find the classes that conflict to resolve it. In our new system, the user can change sections from any tab, letting them resolve timing conflicts without interrupting their train of thought. Finally, the Calendar sidebar satisfies responsiveness by immediately notifying users when a time conflict occurs. In the current system, the user can register for two classes which meet at the same time and never realize his or her mistake. Since the Calendar sidebar notifies the user when two classes conflict, he or she gets instant feedback and will know that it is necessary to resolve a conflict.
+					</p>
+					<p>The two main personas affected by the Calendar sidebar are Sara the Super Planner and Francis the Follower. Sara already uses tools like Outlook to plan her courses, so having the calendar feature integrated makes the user interface intuitive and helpful for her. Similarly, Francis’s needs are satisfied because he can make sure that no classes are conflicting without planning ahead extensively. Francis has the tendency to not prepare before his registration period. As a result, Francis needs a tool to make it easier for him to find the classes that do not conflict and to make sure that he has a valid schedule for the following semester.
+					</p>
+					<p>The major design decisions which shaped the Calendar feature came from user interviews. Most users said that they needed a tool like the Outlook calendar to make sure they could take the classes they want. Therefore, the calendar was designed to resemble the Outlook calendar so that there is a match between the system and the real world. For instance, conflicting time blocks are split to make visualizing conflicts easier. One feature of the Calendar sidebar which is even better than Outlook is that classes are visually separated by color. Whereas the Outlook calendar defaults to showing all events in the same color, the Calendar sidebar automatically changes the colors of each class which makes conflicts easier to spot and fix.
+					</p>
+					<p>One way to improve the Calendar interface is to change the classes to look more like buttons. Many users had problems identifying that the classes could be clicked to change sections. Therefore, changing the classes to more closely resemble buttons would provide a clicking affordance that would make this feature more visible. This problem is partially solved by the change of cursor when it passes over the clickable section, but could be made even more obvious by a change in styling. The other problem with the calendar is its size since it takes up a large amount of screen real estate but has fairly small text. A solution that we discussed but did not have time to implement is to make the calendar expandable and shrinkable so that the user can make the calendar larger and more readable or smaller and have it take up less space.
+					</p>
+					<p><strong>Course Priority Sidebar</strong></p>
+					<div class="row">
+						<div class="col-md-5">
+							<a class="fancybox" rel="group" href="public/images/final_refinement/CourseSidebar.png">
+								<img ng-src="public/images/final_refinement/CourseSidebar.png" alt="..." class="img-thumbnail">
+							</a>
+						</div>
+					</div>
+					<p>The Course Priority bar is a tool that enables users to pick classes in advance and let the website automatically handle registration at the user’s designated registration time. Each class has a priority which corresponds to the order in which the user will be registered for classes. The priority of each class can be changed, which helps users to visualize and register for their optimal schedule. Moreover, the users can add courses directly from the sidebar using a “quick add” feature, which allows for quicker and easier registration. Finally, to give users confidence that they have completed course registration correctly, there is a button to send their course list to the registrar and finalize the schedule.
+					</p>
+					<p>The Course Priority sidebar fulfills the needs of simplicity, accessibility, and responsiveness. Without the sidebar, users must remember which courses they want to take in the next semester during their registration period. It is simpler for users to interact with the sidebar because they can designate their future courses at any time and let the system handle registration automatically. This feature also satisfies the need for accessibility to information. If a user knows exactly what courses they want to take, he or she can add them here and avoid searching through the course list. Finally, the Course Priority sidebar makes the interface more responsive because users see classes show up in the sidebar as soon as the classes are added. In the current Olin Portal system, users must switch tabs to see what classes have already been added. A major problem with my.olin.edu is that there is no immediate feedback that the class was properly added, which is solved by the Course Priority sidebar.
+					</p>
+					<p>In addition to hitting the major needs of our users, the Course Priority sidebar addressed the needs of several personas. For Sara the Super Planner, the Course Priority sidebar is a visual representation of her schedule which helps her plan her schedule more effectively. Moreover, the sidebar rewards Sara for her extensive planning. She can now choose courses for next semester before her registration period and not need to worry about racing other students to register for nearly full classes. For Tyler and Francis, the responsiveness of the system is a major benefit. Since these personas rarely interact with the registration system, having instant feedback is important so they can tell if they are using it properly.
+					</p>
+					<p>The major design decisions for the Course Priority sidebar came from paper prototyping and functional prototyping tests. Many users talked about how important it was to always have the schedule visible. From this feedback, the feature was designed to be a sidebar that appears on every tab so users always have access to what they’ve registered for. Another design decision was to add a “Submit Schedule to Registrar” button. During the functional prototyping and heuristic evaluation tests, many users said that there was no sense of closure after they finished adding their classes. Users wanted some way to assure themselves that they had registered properly. An important aspect of the “Submit Schedule to Registrar” button is that users are explicitly told that they can edit their schedule after clicking it. This way, users won’t feel stuck if they press the button and decide that they want to alter their schedule later.
+					</p>
+					<p>One future modification for the course sidebar would be to change it to support different priority schemes. Many users, especially Sara, will often prioritize their desired classes in a non-linear fashion. For example, if what classes they want are dependent on what classes they can actually get into, their preferences will change under different scenarios. This scenario would come into play if the user wanted a specific distribution of courses. One solution to this problem would be creating a more graph-like sidebar that lets users construct a decision tree for what classes they take. Another solution would be letting users create multiple schedules and rank those instead of directly ranking what classes they want. We did not have enough time to conduct the user tests necessary to decide which solution would be most optimal.
+					</p>
+					<p><strong>Search Bar</strong></p>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="fancybox" rel="group" href="public/images/final_refinement/SearchBar.png">
+								<img ng-src="public/images/final_refinement/SearchBar.png" alt="..." class="img-thumbnail">
+							</a>
+						</div>
+					</div>
+					<p>
+						The search bar is a powerful part of our system that enables the user to navigate the course offerings in multiple ways. This bar can search based on class, professor name, course number, distribution, or keyword. The search bar also appears on every tab and always redirects to the Course Offerings tab, so that even if the user only sees the Graduation Requirements tab they will find the Course Offerings tab through the search bar.
+					</p>
+					<p>
+						The search bar directly fulfills the users’ needs of simplicity and accessibility. Since “search” is a common and well-known feature, our users easily recognize the purpose and functionality of the search bar. Example search terms are listed within the search bar to add to the intuitiveness. The user can also search from the search bar by pressing the “Enter” key or by clicking on the magnifying glass. These multiple routes leading to the same end ensure that every user will figure out how to use the system. Responsiveness is also tangentially addressed in that the system always gives feedback to the user, even if no results exist that match the search query (so the user would get a message notifying them of this).
+					</p>
+					<p>
+						If we were to tie the search bar back to our personas, the search bar will arguably be most used by Tyler the Trail Blazer, who knows he wants to take classes other than the requirements but may not have a certain class in mind. Sara the Super Planner may also use the search bar to look up courses for the future and to find courses that fulfill certain distribution requirements. Francis the Follower is less likely to use the search bar because he will just add courses from the Graduation Requirements tab to finish registration quickly.
+					</p>
+					<p>
+						The search bar was something that we overlooked while paper prototyping. Our users immediately asked for it however, and once we mocked it up our users had a much easier time navigating the system. When we first added the search bar, we had intended for it to only search on course titles. In testing with our initial revision of the implemented prototype, it quickly became clear that our users wanted a much more flexible tool so that they could search and find exactly what they wanted.
+					</p>
+					<p>Given more time, we would add autocomplete to the search bar so that if a user starts typing a query, a list will pop up with possible options to complete the query. This is something that many of our users asked if we would be implementing, and we just didn’t have time.
+					</p>
+					<p><strong>More Information</strong></p>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="fancybox" rel="group" href="public/images/final_refinement/MoreInfo.png">
+								<img ng-src="public/images/final_refinement/MoreInfo.png" alt="..." class="img-thumbnail">
+							</a>
+						</div>
+					</div>
+					<p>
+						The More Information popup is intended to provide the user with more pertinent information about courses that they are interested in. It is accessed by clicking on the “learn more” text below each of the courses (on both the Graduation Requirements and the Course Offerings tabs). When the “learn more” text is pressed, a box pops up and the rest of the screen is greyed out to focus the user’s attention. That box contains the course name, professor who will teach it, description, and section information.
+					</p>
+					<p>
+						This popup addresses most specifically our identified need of accessibility. It combines all of the information that our users could want to know about a class and puts it in one convenient, accessible location. The popup also has multiple exits - the user can click on the “X” in the top right-hand corner, the “Close” button in the bottom right-hand corner, or click anywhere outside of the box - to leave the More Information popup. This is to ensure that no user gets trapped within the popup.
+					</p>
+					<p>
+						Sara the Super Planner is the most likely to use the More Information popup, just because she wants to find out all information available about courses to make planning for the future easier. The More Information popup also addresses her desire for all information to be clearly visible, since it lays out all of the information that she needs in one place. Trail-Blazing Tyler also uses this popup to learn whether he is interested in a class. Francis the Follower may read the More Information popup to learn more about one of his requirements, but he is less dependent on it.
+					</p>
+					<p>
+						The most important thing that we learned about the More Information popup during our paper prototyping is that our users needed every possible escape route from it. Originally, we had assumed that users would just click outside of the box to make it go away, but this was not an obvious enough interaction for our users to understand it intuitively. In adding the “X” button (like exiting from a webpage) and the “Close” button (like exiting from many apps), we pulled on exit routes that our users were already used to so that the webpage was more intuitive.
+					</p>
+					<p>If we had more time, we would be interested in further testing what information our users would like to see in this More Information popup. We included the information that we and a few of our initial users deemed important, but then addressed more critical usability issues in our subsequent user visits. Other information that may be pertinent is prerequisite information, pictures from the course, distribution requirements that this course can fulfill, and student feedback.
+					</p>
+				</div>
+			</div>
+			<div class="row" id="Appendix">
+				<div class="col-md-12">
+					<hr>
+					<h2>Appendix</h2>
+					<hr>
+				</div>
+			</div>
 			<div class="row" id="UsabilityStudyReport">
 				<div class="col-md-12">
 					<h2>Usability Study Report</h2>
@@ -229,13 +401,6 @@
 						</div>
 					</div>
 					<br>
-				</div>
-			</div>
-			<div class="row" id="Appendix">
-				<div class="col-md-12">
-					<hr>
-					<h2>Appendix</h2>
-					<hr>
 				</div>
 			</div>
 			<div class="row" id="UsabilityStudyProtocolRev2">
