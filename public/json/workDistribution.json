@@ -170,5 +170,51 @@
 		"sharon": "25"
 		}
 	]
+	},
+	{"deliverable_title": "Final Refinement",
+	"sub_deliverables": [
+		{"sub_deliverable_title": "Formal Usability Study Protocol",
+		"chaz": "10",
+		"jea": "40",
+		"nathan": "10",
+		"sharon": "40"
+		},
+		{"sub_deliverable_title": "Formal Usability Study Test",
+		"chaz": "0",
+		"jea": "50",
+		"nathan": "0",
+		"sharon": "50"
+		},
+		{"sub_deliverable_title": "Formal Usability Study Report",
+		"chaz": "10",
+		"jea": "35",
+		"nathan": "20",
+		"sharon": "35"
+		},
+		{"sub_deliverable_title": "Prototype Revision",
+		"chaz": "0",
+		"jea": "0",
+		"nathan": "100",
+		"sharon": "0"
+		},
+		{"sub_deliverable_title": "Design Changes Report",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Presentation",
+		"chaz": "25",
+		"jea": "25",
+		"nathan": "25",
+		"sharon": "25"
+		},
+		{"sub_deliverable_title": "Final Report",
+		"chaz": "10",
+		"jea": "30",
+		"nathan": "30",
+		"sharon": "30"
+		}
+	]
 	}
 ]
